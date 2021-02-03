@@ -1,0 +1,56 @@
+.navbar-container {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color:white;
+    top: 0;
+}
+
+.navbar-links-container {
+    display: flex;
+}
+
+.navbar-title, .home, .about, .projects, .contact {
+    color: #6200EE;
+}
+
+.navbar-title:hover, .home:hover, .about:hover, .projects:hover, .contact:hover {
+    color: #7F39FB;
+}
+
+.links {
+    text-decoration: none;
+}
+
+.home, .about, .projects, .contact, .admin {
+    padding: 16px;
+    font-family: var(--secondary-font);
+}
+
+.navbar-title {
+    padding: 8px;
+    font-family: var(--title-font);
+}
+
+.admin:hover{
+    transform: scale(1.4);
+    transition: all 0.5s ease-in-out;
+    animation-name: movin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movin {
+    0% {
+      transform: rotate(120deg);
+    }
+    50% {
+        transform: rotate(0deg);
+        transform: scale(1.4);
+    }
+    100% {
+      transform: rotate(-240deg);
+    }
+  }
