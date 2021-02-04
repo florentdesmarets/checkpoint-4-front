@@ -20,7 +20,7 @@ export default function Projects() {
             fetchProjects()
         }, [])
     
-console.log(setProjects)
+console.log(projects)
 
 const [title, setTitle]=useState(true);
 const changeTitle = () =>{
@@ -58,9 +58,9 @@ window.addEventListener('scroll', changeTitle);
                     <div className="skills-object">
                         {projects.map((projects) => (
                             <div key={projects.id} className="react-card">
-                            <img src={`${DOMAIN_URL}/upload/${projects.photos[0]}`} alt="project" className="react-img"/>
-                            <p className="react-text">{projects.project_title}</p>
-                        </div>
+                                <img src={`${DOMAIN_URL}/upload/${projects.project_image}`} alt="project" className="react-img"/>
+                                <p className="react-text">{projects.project_title}</p>
+                            </div>
                         ))
                         }
                     </div>

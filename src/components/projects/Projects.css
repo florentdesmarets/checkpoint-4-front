@@ -4,3 +4,7 @@
     padding: 100px;
     border-radius: 20%;
 }
+
+.react-card{
+    flex-wrap: wrap;
+}
