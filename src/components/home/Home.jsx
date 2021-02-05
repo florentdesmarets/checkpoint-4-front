@@ -7,11 +7,11 @@ export default function Home() {
     return(
    
         <div className="home-container" >
-            <h4 className="jet-animation">🚀</h4>
-           <video className="video" src={`${DOMAIN_URL}/assets/video-true.mp4`} autoPlay muted loop />
+           <h4 className="jet-animation">🚀</h4>
+            <video className="video" src={`${DOMAIN_URL}/assets/video-true.mp4`} autoPlay muted loop />
            <h2 className="hello">Hello my name is</h2>
            <h1 className="home-title">FLORENT DESMARETS</h1>
-           <p className="react-developper">An React Developer 🚀</p>
+           <p className="react-developper">A React Developer 🚀</p>
            <h2 className="my-portfolio">And this is my Portfolio</h2>
            <div className="social-networks-container">
                <a href="https://www.facebook.com/florent.desmarets" target="BLANK"><img src={`${DOMAIN_URL}/assets/facebook(3).png`} alt="facebook" className="social-networks"/></a>
