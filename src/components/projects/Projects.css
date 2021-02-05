@@ -9,10 +9,3 @@
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 930px) {
-    .video-about{
-        height: 100%;
-        width: auto;
-    }
-
-}
