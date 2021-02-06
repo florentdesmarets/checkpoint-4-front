@@ -16,7 +16,7 @@ const Admin = () => {
             .then(res => setProjects(res.data))
         }
         fetchProjects()
-    }, [])
+    })
 
     
 
@@ -29,7 +29,6 @@ const Admin = () => {
         fetchMessage()
     })
 
-    console.log(message)
     return (
         <div className="admin-container">
             <video className="video-about" src={`${DOMAIN_URL}/assets/video-true2.mp4`} autoPlay muted loop />

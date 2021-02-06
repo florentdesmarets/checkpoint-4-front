@@ -24,7 +24,8 @@ const CreateProject = () => {
                         <input type="text" id="project_title" name="project_title"/>
                     </div>
                     <div className="button-container">
-                        <button className="label-text">Add photo</button>
+                    <label className="label-text" for="project_image">Upload photo</label>
+                        <input type="file" accept="image/png, image/jpeg, image/jpg" id="project_image" name="project_image" className="label-text"/>
                         <button className="label-text-create-project">Add project</button>
                     </div>
                 </form>
