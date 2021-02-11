@@ -3,10 +3,10 @@ body {
 }
 
 .video {
-    height: 60vw;
     width: 100%;
     position: absolute;
     z-index: -2;
+    top: -143px;
 }
 
 .home-container {

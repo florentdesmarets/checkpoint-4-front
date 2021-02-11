@@ -5,7 +5,7 @@
     border-radius: 20%;
 }
 
-.react-card{
+.skills-object {
+    display: flex;
     flex-wrap: wrap;
 }
-
