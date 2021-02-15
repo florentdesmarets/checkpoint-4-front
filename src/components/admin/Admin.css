@@ -1,0 +1,113 @@
+
+
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+
+.project-text {
+    text-align: center;
+    color: var(--main-color);
+    font-family: var(--secondary-font);
+    font-weight: 700;  
+}
+
+.project-admin-title{
+    text-align: center;
+    font-family: var(--secondary-font);
+    color: white;
+    font-size: 32px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-img {
+    height: 100px;
+    width: 100px;
+}
+
+.main-title-admin {
+    text-align: center;
+    font-family: var(--title-font);
+    color: white;
+    font-size: 48px;
+    margin-top: 1000px ;
+}
+
+.message-admin-title {
+    text-align: center;
+    font-family: var(--secondary-font);
+    color: white;
+    font-size: 32px;
+}
+
+.message-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.message-list {
+    margin-bottom: 100px;
+}
+
+
+
+.name-contact{
+    font-family: var(--secondary-font);
+    color: var(--main-color);
+    font-weight: 800;
+    font-size: 24px;
+}
+
+
+.remove {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.message-contact {
+    font-family: var(--secondary-font);
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.remove-project {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-project-button {
+    color: green;
+    justify-content: flex-end;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    font-family: var(--secondary-font);
+    font-weight: 800;
+}
