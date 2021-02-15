@@ -1,0 +1,11 @@
+.dev-picture {
+    width: 700px;
+    height: 500px;
+    padding: 100px;
+    border-radius: 20%;
+}
+
+.skills-object {
+    display: flex;
+    flex-wrap: wrap;
+}
