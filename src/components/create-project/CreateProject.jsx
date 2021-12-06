@@ -4,6 +4,7 @@ import { FETCH } from '../../Fetch';
 import { DOMAIN_URL} from '../../Fetch'
 import './../create-project/CreateProject.css'
 import {Link} from "react-router-dom";
+import {useHistory} from 'react-router-dom'
 
 const CreateProject = () => {
 
@@ -11,6 +12,8 @@ const CreateProject = () => {
     const [fileName, setFileName] = useState('');
     const [uploadedFile, setUploadedFile] = useState({});
     const [titleFile, setTitleFile] = useState('');
+    const history = useHistory();
+
   
             const onChangeText = e => {
               setTitleFile(e.target.value);
@@ -44,6 +47,7 @@ const CreateProject = () => {
               .then(res => {
                 console.log(res);
                 console.log(res.data);
+                history.push("/Admin")
               })
             };
 

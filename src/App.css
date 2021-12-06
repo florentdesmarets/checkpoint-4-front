@@ -9,7 +9,7 @@ html {
 :root {
     --title-font: 'Electrolize', sans-serif;
     --secondary-font: 'Montserrat', sans-serif;
-    --main-color: #6200EE;
+    --main-color: #2858e3;
     --light-color: #FFFFFF;
     --spacing: 8px;
     --spacing-little: calc(var(--spacing) *0.5);

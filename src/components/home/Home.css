@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.video {
+.background {
     width: 100%;
     position: absolute;
     z-index: -2;
@@ -26,50 +26,71 @@ body {
 
 .hello, .my-portfolio {
     color: var(--light-color);
-    font-size: 40px;
+    font-size: 50px;
     font-family: var(--secondary-font);
 }
-
-.react-developper {
-    color: white;
-    font-size: medium;
-    font-family: var(--secondary-font);
-    font-weight: 700;
-}
-
-.social-networks-container {
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    width: 60%;
-    
-}
-
-
-.social-networks {
-    height: auto;
-    width: 50px;
-}
-
-.social-networks:hover {
-    transform: scale(1.4);
-    transition: all 0.5s ease-in-out;
-    animation-name: movin;
-    animation-duration: 1s;
-    animation-iteration-count: inherit;
-}
-
-@keyframes movin {
-    0% {
-      transform: rotate(120deg);
-    }
-    100% {
-        transform: rotate(0deg);
-        transform: scale(1.4);
-    }
+ .avatar {
+    transform: scale(0.6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url("/src/little-pic/hi.png") bottom left no-repeat;
+    width: 50%;
+    height: 50%;
+    opacity: 0;
+    animation: avatar-move 1s 1s forwards;
+    animation-duration: 4s;
   }
 
-.jet-animation {
+  .hello {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    animation: silhouette-move-in 1000ms 800ms forwards;
+  }
+  .text-container {
+      border: 2px solid white;
+      padding: 20px;
+      border-radius: 50px;
+      opacity: 0;
+      animation: silhouette-move-in 1000ms 800ms forwards;
+  }
+  
+  @keyframes silhouette-move-in {
+    from {
+      background-position-x: 0;
+    
+    }
+    to {
+      opacity: 1;
+      background-position-x: 50%;
+     
+      
+    }
+  }
+  
+  @keyframes avatar-move {
+    0% {
+      background-position-x: 0;
+    
+    }
+    50% {
+      opacity: 1;
+      background-position-x: 50%;
+    }
+    100% {
+        background-position-x: 0;
+        opacity: 0;
+    }
+  }
+ 
+
+  
+
+
+/* .jet-animation {
     z-index: -1;
     position: absolute;
     font-size: 120px;
@@ -92,12 +113,117 @@ body {
         transform: rotate(0deg);
         transform: translate(400px, -150px);
     }
-  }
+  } */
 
+  /* *{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 42px;
+	background: #f7f7f7;
+} */
+.title-span{
+	margin: 0 15px;
+	line-height: .7;
+	text-shadow: 0 0 2px rgba(255, 255, 255, 0.925);
+	animation: span 3s ease-in infinite alternate;
+}
+.code{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+    align-items: baseline;
+    
+  
+  	
+	@media(max-width: 600px){ transform: scale(.65); }
+}
+.letter{
+	display: inline-flex;
+	height: 24px;
+	width: 27px;
+    color: white;
+	/* border: 2.5px solid #FF1EAD; */
+	border: 2.35px solid rgb(255, 255, 255);
+	border-radius: 14px;
+	box-shadow:
+		0 0 2px rgb(255, 255, 255),
+		inset 0 0 2px rgba(255, 255, 255, 0.993);
+
+	animation: letter 4s ease-in-out infinite alternate;
+
+    
+}
+@keyframes span {
+	0%,30%{ margin: 0 2px; }
+	70%,100%{ margin: 0 2px; }
+}
+@keyframes letter {
+	0%,30%{ width: 20px; }
+	70%,100%{ width: 15vw; }
+}
+
+.buttons {
+    display: flex;
+    padding: 90px;
+    width: 25%;
+    justify-content: space-around;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    animation: silhouette-move-in 1000ms 800ms forwards;
+}
+.button1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 800;
+    border: 2px solid white;
+    font-size: large;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+.button1:hover {
+    transform: translateY(-2px);
+    border: 2px solid rgba(37, 35, 35, 0.808);
+    
+}
+.button2 {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(37, 35, 35, 0.808);
+    color: white;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: large;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 10px 100px -20px  rgba(37, 35, 35, 0.808);
+}
+.button2:hover {
+    transform: translateY(-2px);
+    background-color:transparent;
+    border: 2.2px solid black;
+}
   @media screen and (max-width: 930px) {
-    .video{
+    .background{
         height: 100%;
         width: auto;
+        position: fixed;
+        z-index: -2;
+        left: 0;
+        top: 0;
+        filter: contrast(90%);
     }
 
     .hello, .my-portfolio {
@@ -111,9 +237,9 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-    .video{
+    .background{
         height: 100%;
-        width: auto;
+        width:fit-content;
     }
 
     .hello, .my-portfolio {

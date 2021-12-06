@@ -1,15 +1,22 @@
 import React from 'react';
 import './Projects.css';
-import {Link} from "react-router-dom";
 import {DOMAIN_URL} from '../../Fetch'
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import { FETCH } from './../../Fetch';
-
+import Footer from '../footer/Footer';
 
 export default function Projects() {
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, []);
+    
+
     const [projects, setProjects] = useState([]);
+    const [downArrowColor, setDownArrowColor]=useState(true);
+    const [downArrow, setDownArrow]=useState(true);
+    const [title, setTitle]=useState(true);
 
         useEffect(() => {
             const fetchProjects = () => {
@@ -22,7 +29,6 @@ export default function Projects() {
     
 console.log(projects)
 
-const [title, setTitle]=useState(true);
 const changeTitle = () =>{
     if(window.scrollY>= 50) {
         setTitle(false)
@@ -33,13 +39,43 @@ const changeTitle = () =>{
 window.addEventListener('scroll', changeTitle);
 
 
+const changeArrow = () =>{
+    if(window.scrollY>= 50) {
+        setDownArrow(false)
+    }else{
+        setDownArrow(true)
+    }
+}
+window.addEventListener('mousemove', changeArrow);
+window.addEventListener('scroll', changeArrow);
+
+const changeArrowColor = () =>{
+    if(window.scrollY>= 1500) {
+        setDownArrowColor(false)
+    }else if(window.scrollY<= 200) {
+        setDownArrowColor(false)
+    }else{
+        setDownArrowColor(true)
+    }
+}
+window.addEventListener('mousemove', changeArrowColor);
+window.addEventListener('scroll', changeArrowColor);
+
+
+
     return(
    
         <div className="Projects-container" >
-            <video className="video-about" src={`${DOMAIN_URL}/assets/video-true.mp4`} autoPlay muted loop />
+            <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} />
             <h2 className={title ? "about-me-title" : "title-none"}>Let me show my talent with projects i had already do</h2>
-            <section className="presentation">
-                <img src={`${DOMAIN_URL}/assets/dev-picture.jpg`} alt="" className="dev-picture"/>
+            <a href="#presentation-project">
+                <img src={`${DOMAIN_URL}/assets/down-arrow.png`} alt="" className={downArrow ? "down-arrow" : "no-down-arrow"}/>
+            </a>
+            <a  href="#project-container">
+                <img src={`${DOMAIN_URL}/assets/down-arrow.png`} alt="" className={downArrowColor ? "down-arrow-color" : "no-down-arrow"}/>
+            </a>
+            <section id="presentation-project" className="presentation">
+                <img src={`${DOMAIN_URL}/assets/web-dev.jpg`} alt="" className="dev-picture"/>
                 <div className="textcontainer">
                     <h3 className="presentation-title">More projects, more experience, more creativity</h3>
                     <p className="presentation-description">Creating projects is essential to progress as a developer, with wild code, school I chained Hackathon and projects which gave me a good overview of the developer's work</p>
@@ -53,7 +89,7 @@ window.addEventListener('scroll', changeTitle);
                     <p className="presentation-description">I look forward to working with you.</p>
                 </div>
             </section>
-            <section className="skills-container">
+            <section id="project-container" className="skills-container">
                     <h3 className="skills-title">Projects</h3>
                     <div className="skills-object">
                         {projects.map((projects) => (
@@ -65,6 +101,7 @@ window.addEventListener('scroll', changeTitle);
                         }
                     </div>
             </section>
+            <Footer/>
         </div>
       
        

@@ -1,5 +1,7 @@
 
-
+.admin-message-container {
+    height: 100%;
+}
 
 .project-list {
     display: flex;
@@ -11,6 +13,24 @@
     padding: 20px;
 }
 
+.messages-icon-link {
+ background-color: white;
+ border-radius: 45%;
+ padding: 20px;
+ margin: 20px;
+
+}
+
+.link-mess:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.4s all;
+}
+
+.button-message-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
 
 .project-text {
     text-align: center;
@@ -42,7 +62,7 @@
     font-family: var(--title-font);
     color: white;
     font-size: 48px;
-    margin-top: 1000px ;
+    margin-top: 100px ;
 }
 
 .message-admin-title {
@@ -65,7 +85,19 @@
 }
 
 .message-list {
-    margin-bottom: 100px;
+    margin: 100px;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    overflow:visible;
+}
+
+.new-message {
+    color: white;
+}
+
+.no-message {
+    display: none;
 }
 
 
@@ -89,6 +121,8 @@
     color: var(--main-color);
     font-weight: 700;
     font-size: 16px;
+    padding: 10px;
+    
 }
 
 .remove-project {
@@ -110,4 +144,9 @@
     margin: 10px;
     font-family: var(--secondary-font);
     font-weight: 800;
+}
+
+.message-user-container {
+    width: 100%;
+    
 }

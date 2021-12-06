@@ -1,15 +1,21 @@
 import React from 'react';
 import './AboutMe.css';
-import {Link} from "react-router-dom";
 import {DOMAIN_URL} from '../../Fetch'
-import {useState} from 'react';
-
+import {useState, useEffect} from 'react';
+import Footer from '../footer/Footer';
 
 
 export default function AboutMe() {
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, []);
+    
 
+const [downArrowColor, setDownArrowColor]=useState(true);
+const [downArrow, setDownArrow]=useState(true);
 const [title, setTitle]=useState(true);
+
 const changeTitle = () =>{
     if(window.scrollY>= 50) {
         setTitle(false)
@@ -20,12 +26,43 @@ const changeTitle = () =>{
 window.addEventListener('scroll', changeTitle);
 
 
+const changeArrow = () =>{
+    if(window.scrollY>= 50) {
+        setDownArrow(false)
+    }else{
+        setDownArrow(true)
+    }
+}
+window.addEventListener('mousemove', changeArrow);
+window.addEventListener('scroll', changeArrow);
+
+const changeArrowColor = () =>{
+    if(window.scrollY>= 1500) {
+        setDownArrowColor(false)
+    }else if(window.scrollY<= 200) {
+        setDownArrowColor(false)
+    }else{
+        setDownArrowColor(true)
+    }
+}
+window.addEventListener('scroll', changeArrowColor);
+window.addEventListener('mousemove', changeArrowColor);
+
+
+
+
     return(
    
-        <div className="about-me-container" >
-            <video className="video-about" src={`${DOMAIN_URL}/assets/video-true.mp4`} autoPlay muted loop />
-            <h2 className={title ? "about-me-title" : "title-none"}>Who i am ?</h2>
-            <section className="presentation">
+        <div id="about-us-container" className="about-me-container" >
+           <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} />
+            <h2 id="who-i-am" className={title ? "about-me-title" : "title-none"}>Who i am ?</h2>
+            <a href="#presentation-section">
+                <img src={`${DOMAIN_URL}/assets/down-arrow.png`} alt="" className={downArrow ? "down-arrow" : "no-down-arrow"}/>
+            </a>
+            <a  href="#skills-section">
+                <img src={`${DOMAIN_URL}/assets/down-arrow.png`} alt="" className={downArrowColor ? "down-arrow-color" : "no-down-arrow"}/>
+            </a>
+            <section id="presentation-section" className="presentation">
                 <div className="textcontainer">
                     <h3 className="presentation-title">Florent desmarets to serv you !</h3>
                     <p className="presentation-description">I am a fullstack developer in Reactjs and nodejs, I also know how to use Mysql, Express, Javascript.</p>
@@ -38,9 +75,9 @@ window.addEventListener('scroll', changeTitle);
 
                     <p className="presentation-description">I look forward to working with you.</p>
                 </div>
-                <img src={`${DOMAIN_URL}/assets/dev-work.jpg`} alt="" className="dev-working"/>
+                <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Prescription02&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light' alt="" className="dev-working"/>
             </section>
-            <section className="skills-container">
+            <section id="skills-section" className="skills-container">
                     <h3 className="skills-title">My Skills</h3>
                     <div className="skills-object">
                         <div className="react-card">
@@ -57,6 +94,7 @@ window.addEventListener('scroll', changeTitle);
                         </div>
                     </div>
             </section>
+            <Footer/>
         </div>
       
        

@@ -1,10 +1,11 @@
-.video-about {
+.background {
     height: 60vw;
     width: 100%;
     position: fixed;
     z-index: -2;
     left: 0;
     top: 0;
+    filter:contrast(90%)  ;
 }
 
 .about-me-title {
@@ -17,23 +18,39 @@
     color: var(--light-color);
     font-size: 56px;
     top: 40%;
+    opacity: 0;
+    animation: silhouette-move-in 1000ms 800ms forwards;
 }
+
+  
+@keyframes silhouette-move-in {
+    from {
+      background-position-x: 0;
+    
+    }
+    to {
+      opacity: 1;
+      background-position-x: 50%;
+     
+      
+    }
+  }
+  
 
 .presentation {
     position: absolute;
-    background-color: white;
     z-index: 2;
     width: 100%;
     left: 0;
     text-align: center;
-    top: 100%;
+    top: 100vh;
     display: flex;
 }
 
 .presentation-title {
     font-family: var(--secondary-font);
     font-size: 36px;
-    color: var(--main-color);
+    color: white;
 }
 
 .dev-working {
@@ -48,7 +65,7 @@
 }
 
 .presentation-description {
-    color: var(--main-color);
+    color: white;
     font-size: 24px;
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -69,6 +86,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 100vh;
 }
 
 .skills-title {
@@ -102,11 +120,82 @@
     font-weight: 700;
 }
 
+.down-arrow {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 80%;
+    left: 92%;
+    transition: all 0.5s ease-in-out;
+    animation-name: arrowdownanim;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    z-index: 1000;
+}
+
+.no-down-arrow {
+    display: none;
+}
+
+.down-arrow-color{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 80%;
+    left: 92%;
+    transition: all 0.5s ease-in-out;
+    animation-name: arrowdownanim;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    z-index: 1000;
+}
+.down-arrow:hover {
+    transform: scale(1.4);
+}
+.down-arrow-color:hover {
+    transform: scale(1.4);
+}
+
+.up-arrow {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 80%;
+    left: 92%;
+    transition: all 0.5s ease-in-out;
+    animation-name: arrowdownanim;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    z-index: 1000;
+    transform: rotate(180deg);
+}
+
+@keyframes arrowdownanim {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, -8px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
 @media screen and (max-width: 930px) {
-    .video-about{
+    .background{
         height: 100%;
         width: auto;
+        position: fixed;
+        z-index: -2;
+        left: 0;
+        top: 0;
+        filter: contrast(90%);
     }
+
     .presentation-description {
         font-size: 16px;
     }

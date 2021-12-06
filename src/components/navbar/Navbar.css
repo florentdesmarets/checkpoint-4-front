@@ -1,8 +1,9 @@
 .navbar-container {
+    display: none;
     width: 100%;
     height: auto;
     position: fixed;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     background-color:white;
     top: 0;
@@ -19,7 +20,6 @@
     position: fixed;
     display: flex;
     justify-content: space-between;
-    background-color:white;
     top: 0;
     z-index: 10;
 }
@@ -29,11 +29,12 @@
 }
 
 .navbar-title, .home, .about, .projects, .contact {
-    color: #6200EE;
+    color: white;
 }
 
 .navbar-title:hover, .home:hover, .about:hover, .projects:hover, .contact:hover {
-    color: #7F39FB;
+    color: white;
+    transition: ease-in-out all;
 }
 
 .links {
@@ -43,34 +44,43 @@
 .home, .about, .projects, .contact, .admin {
     padding: 16px;
     font-family: var(--secondary-font);
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+.admin {
+    opacity: 0;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    border-radius: 50px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+
+.home:hover, .about:hover, .projects:hover, .contact:hover, .admin:hover {
+    transform: scale(1.4);
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
 }
 
 .navbar-title {
     padding: 8px;
-    font-family: var(--title-font);
+    font-family: var(--secondary-font);
+    position: relative;
+    opacity: 0;
+    animation: silhouette-move-in 1000ms 800ms forwards;
 }
 
-.admin:hover{
+.social-networks:hover {
     transform: scale(1.4);
     transition: all 0.5s ease-in-out;
-    animation-name: movin;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
 }
 
-@keyframes movin {
-    0% {
-      transform: rotate(120deg);
-    }
-    50% {
-        transform: rotate(0deg);
-        transform: scale(1.4);
-    }
-    100% {
-      transform: rotate(-240deg);
-    }
-  }
-  @media screen and (max-width: 930px) {
+
     .navbar-container {
         display: none;
     }
@@ -82,8 +92,9 @@
     }
 
     .title-navbar {
-        color: var(--main-color);
+        color: white;
         font-family: var(--title-font);
+        
     }
 
     .NavbarMenu-Burger {
@@ -91,24 +102,115 @@
         flex-direction: column;
         justify-content: center;
         cursor:pointer;
+        position: relative;
     }
 
     .NavbarMenu-Burger span {
         display: flex;
-        background-color: var(--main-color);
+        background-color: white;
         height: 3px;
         width: 30px;
         margin-bottom: 6px;
         z-index: 20;
     }
+
+
+    .social-networks-container {
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+        width: 95%;   
+    }
+    
+    .social-networks {
+        height: auto;
+        width: 50px;
+        padding: 50px;
+    }
     .menu-close {
-        display: none;
+       display:none
     }
     .menu-open {
         display: flex;
         position: fixed;
         align-items: center;
-        top: 8vh;
+        top: 13vh;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .animation-on {
+        transition: all 0.5s ease-in-out;
+        animation-name: transitionOpen;
+        animation-duration: 1.5s;
+        animation-iteration-count: inherit;
+        animation-fill-mode: backwards;
+    }
+    .animation-off {
+        transition: all 0.5s ease-in-out;
+        animation-name: transitionClose;
+        animation-duration: 1.5s;
+        animation-iteration-count: inherit;
+        animation-fill-mode: backwards;
+    }
+
+    @keyframes transitionOpen {
+        0% {
+            transform: translate(300%, 0);
+        }
+        50% {
+            transform: translate(0%, 0%);
+        }
+        100% {
+            transform: translate(0%, 0%);
+        }
+    }
+
+    @keyframes transitionClose {
+        0% {
+            transform: translate(0%, 0%);
+        }
+        50% {
+            transform: translate(0%, 0%);
+        }
+        100% {
+            transform: translate(300%, 0%);
+        }
+    }
+
+    .cross-2 {
+        transform: rotate(315deg) translate(-8px, -8px);
+        transition: all 0.5s ease-in-out;
+        height: 0px;
+        padding: 1.5px;
+    }
+    .cross-1 {
+        transform: rotate(45deg) translate(0px, 17px);
+        transition: all 0.5s ease-in-out;
+        padding: 1.5px;
+    }
+    .cross-3 {
+        transform: rotate(-45deg) translate(0px, -14px);
+        transition: all 0.5s ease-in-out;
+    }
+    .cross-4 {
+        transform: translate(0px, 0px);
+        transition: all 0.5s ease-in-out;
+    }
+    .cross-6 {
+        transform: translate(0px, 0px);
+        transition: all 0.5s ease-in-out;
+    }
+
+
+
+@media screen and (max-width: 350px) {
+    .menu-open {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        top: 15vh;
         right: 0;
         width: 50vw;
         height: 100vh;
@@ -120,17 +222,4 @@
         animation-iteration-count: inherit;
         animation-fill-mode: backwards;
     }
-    @keyframes transitionOpen {
-        0% {
-            transform: translate(100%, 0);
-        }
-        50% {
-            transform: translate(0%, 0%);
-        }
-        100% {
-            transform: translate(0%, 0%);
-        }
-    }
-    
 }
-  

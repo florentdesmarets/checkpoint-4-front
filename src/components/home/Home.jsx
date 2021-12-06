@@ -1,24 +1,31 @@
 import React from 'react';
 import './Home.css';
-import {Link} from "react-router-dom";
 import {DOMAIN_URL} from '../../Fetch'
+import {Link} from "react-router-dom";
 
 export default function Home() {
     return(
    
         <div className="home-container" >
-           <h4 className="jet-animation">🚀</h4>
-            <video className="video" src={`${DOMAIN_URL}/assets/video-true.mp4`} autoPlay muted loop />
-           <h2 className="hello">Hello my name is</h2>
-           <h1 className="home-title">FLORENT DESMARETS</h1>
-           <p className="react-developper">A React Developer 🚀</p>
-           <h2 className="my-portfolio">And this is my Portfolio</h2>
-           <div className="social-networks-container">
-               <a href="https://www.facebook.com/florent.desmarets" target="BLANK"><img src={`${DOMAIN_URL}/assets/facebook(3).png`} alt="facebook" className="social-networks"/></a>
-               <a href="https://github.com/florentdesmarets" target="BLANK"><img src={`${DOMAIN_URL}/assets/github.png`} alt="github" className="social-networks"/></a>
-               <a href="https://www.instagram.com/florent_desmarets/?hl=fr" target="BLANK"><img src={`${DOMAIN_URL}/assets/instagram(3).png`} alt="instagram" className="social-networks"/></a>
-               <a href="https://www.linkedin.com/in/florent-desmarets-638a491b9/" target="BLANK"><img src={`${DOMAIN_URL}/assets/linkedin.png`}  alt="linkedin" className="social-networks"/></a>
-           </div>
+            <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} />
+            <div className="avatar"></div>
+            <div className="text-container">
+                <h2 className="hello">Wireframe</h2>
+                <h2 className="hello">FullStack</h2>
+                <h2 className="hello">Minimalist</h2>
+                <div className="hello">
+                <div class="code">
+                    <span className="title-span">C</span>
+                    <span className="letter"></span>
+                    <span className="title-span">d</span>
+                    <span className="title-span">e</span>
+                </div>          
+                </div>
+            </div>
+            <div className="buttons">
+                <Link className="links" to="/about-me"><div className="button1">MY PORTFOLIO</div></Link>
+                <Link className="links" to="/contact"><div className="button2">GET IN TOUCH</div></Link> 
+            </div>
         </div>
       
        
