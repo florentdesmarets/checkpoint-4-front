@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+:root {
+    --title-font: 'Electrolize', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+    --main-color: #2858e3;
+    --light-color: #FFFFFF;
+    --spacing: 8px;
+    --spacing-little: calc(var(--spacing) *0.5);
+    --spacing-medium: calc(var(--spacing) * 2);
+    --spacing-large: calc(var(--spacing)* 4);
+  }
+
+.App {
+    position: relative;
+
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.App-content {
+    position: relative;
+    height: calc(100% - 10vh);
+    width: 100%;
+}

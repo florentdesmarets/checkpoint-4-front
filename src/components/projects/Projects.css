@@ -1,0 +1,14 @@
+.dev-picture {
+    max-width: 500px;
+    height: auto;
+    padding: 0;
+}
+
+.skills-object {
+    display: flex;
+    flex-wrap: wrap;
+}
+.react-card:hover {
+    transform: scale(1.05);
+    transition: 0.4s ease-in-out;
+}

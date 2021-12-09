@@ -1,0 +1,188 @@
+.background {
+    height: 60vw;
+    width: 100%;
+    position: fixed;
+    z-index: -2;
+    left: 0;
+    top: 0;
+    filter:contrast(90%)  ;
+}
+
+.about-me-title {
+    position: absolute;
+    color: white;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-family: var(--title-font);
+    color: var(--light-color);
+    font-size: 56px;
+    top: 40%;
+    opacity: 0;
+    animation: silhouette-move-in 1000ms 800ms forwards;
+}
+
+  
+@keyframes silhouette-move-in {
+    from {
+      background-position-x: 0;
+    
+    }
+    to {
+      opacity: 1;
+      background-position-x: 50%;
+     
+      
+    }
+  }
+  
+
+.presentation {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    top: -10vh;
+    display: flex;
+}
+
+.presentation-title {
+    font-family: var(--secondary-font);
+    font-size: 36px;
+    color: white;
+}
+
+.dev-working {
+    width: 500px;
+    height: 500px;
+    padding: 100px;
+    border-radius: 20%;
+}
+
+.textcontainer {
+    margin-top: 50px ;
+    padding: 100px;
+}
+
+.presentation-description {
+    color: white;
+    font-size: 24px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+}
+
+.skills-container {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-object {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+}
+
+.skills-title {
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 10px;
+    font-family: var(--secondary-font);
+    color: var(--light-color);
+    font-size: 40px;
+}
+
+.react-img {
+    width: 300px;
+    height: 300px;
+}
+
+.react-card {
+    padding: 100px;
+}
+
+.title-none {
+    display: none;
+    transition: all 1s ease-in-out;
+}
+
+.react-text {
+    color: var(--light-color);
+    font-size: 24px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+}
+
+
+
+@media screen and (max-width: 930px) {
+    .background{
+        height: 100%;
+        width: auto;
+        position: fixed;
+        z-index: -2;
+        left: 0;
+        top: 0;
+        filter: contrast(90%);
+    }
+
+    .presentation-description {
+        font-size: 16px;
+    }
+    .textcontainer {
+        padding: 15px;
+    }
+    .about-me-title {
+        font-size: 56px;
+        top: 20%;
+    }
+    .dev-working {
+        width: 300px;
+        height: 300px;
+        padding: 100px;
+        border-radius: 150px;
+    }
+    .presentation {
+        width: 100%;
+        text-align: center;
+        top: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-container {
+        top: 150%;
+        display: flex;
+        flex-direction: column;
+    }
+    .skills-object {
+        flex-direction: column;
+        align-items: center;
+    }
+    .dev-working {
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+        border-radius: 20%;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .background{
+        height: 100%;
+        width:auto;
+    }
+
+    .presentation {
+        top: -1vh;
+    }
+    
+}

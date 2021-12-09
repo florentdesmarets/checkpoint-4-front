@@ -1,0 +1,27 @@
+
+.main-title-create-project {
+    text-align: center;
+    font-family: var(--title-font);
+    color: white;
+    font-size: 48px;
+}
+
+.form-create-project {
+    padding: 20px;
+    border-radius: 50px
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.label-text-create-project{
+    font-family: var(--secondary-font);
+    color: var(--main-color);
+    font-weight: 700;
+    padding: 10px;
+    margin-top: 80px;
+}
