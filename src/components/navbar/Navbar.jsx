@@ -4,12 +4,6 @@ import {Link} from "react-router-dom";
 import {useState} from 'react';
 import { DOMAIN_URL } from '../../Fetch';
 
-import { useTheme } from '@mui/material/styles';
-import OutlinedInput from '@mui/material/OutlinedInput';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
 
 export default function Navbar() {
 
@@ -41,20 +35,20 @@ export default function Navbar() {
                 <span className={openMenu ? "cross-3" : "cross-6" }></span>
             </div>
             <div className={openMenu ? "menu-open" : "menu-close"}>
-                <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} />
+                <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} alt='background' />
                 <div className={openMenu ? "animation-on" : "animation-off"}>
                     <Link className="links" to="/" onClick={changeOpenMenu}>  <h2 className="home">Home</h2></Link>
                     <Link className="links" to="/about-me" onClick={changeOpenMenu}>  <h2 className="about">About me</h2></Link>
                     <Link className="links" to="/projects" onClick={changeOpenMenu}>   <h2 className="projects">Projects</h2></Link>
                     <Link className="links" to="/contact" onClick={changeOpenMenu}>   <h2 className="contact">Contact</h2></Link>
                     <div className="social-networks-container">
-                        <a href="https://www.facebook.com/florent.desmarets" target="BLANK"><img src={`${DOMAIN_URL}/assets/facebook(3).png`} alt="facebook" className="social-networks"/></a>
-                        <a href="https://github.com/florentdesmarets" target="BLANK"><img src={`${DOMAIN_URL}/assets/github.png`} alt="github" className="social-networks"/></a>
-                        <a href="https://www.instagram.com/florent_desmarets/?hl=fr" target="BLANK"><img src={`${DOMAIN_URL}/assets/instagram(3).png`} alt="instagram" className="social-networks"/></a>
-                        <a href="https://www.linkedin.com/in/florent-desmarets-638a491b9/" target="BLANK"><img src={`${DOMAIN_URL}/assets/linkedin.png`}  alt="linkedin" className="social-networks"/></a>
+                        <a href="https://www.facebook.com/florent.desmarets" target="BLANK" rel='noreferrer' ><img src={`${DOMAIN_URL}/assets/facebook(3).png`} alt="facebook" className="social-networks"/></a>
+                        <a href="https://github.com/florentdesmarets" target="BLANK" rel='noreferrer'><img src={`${DOMAIN_URL}/assets/github.png`} alt="github" className="social-networks"/></a>
+                        <a href="https://www.instagram.com/florent_desmarets/?hl=fr" target="BLANK" rel='noreferrer'><img src={`${DOMAIN_URL}/assets/instagram(3).png`} alt="instagram" className="social-networks"/></a>
+                        <a href="https://www.linkedin.com/in/florent-desmarets-638a491b9/" target="BLANK" rel='noreferrer'><img src={`${DOMAIN_URL}/assets/linkedin.png`}  alt="linkedin" className="social-networks"/></a>
                     </div>
                 </div>
-                <Link className="links" to="/admin" onClick={changeOpenMenu}>  <img className="admin" src={`${DOMAIN_URL}/assets/cerf.jpg`}/></Link> 
+                <Link className="links" to="/admin" onClick={changeOpenMenu}>  <img className="admin" src={`${DOMAIN_URL}/assets/cerf.jpg`} alt='dear'/></Link> 
             </div>
         </div>
     </div>

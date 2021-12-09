@@ -8,7 +8,7 @@ export default function Home() {
     return(
    
         <div className="home-container" >
-            <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} />
+            <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} alt='background'/>
             <div className="avatar"></div>
             <div className="text-container">
                 <h2 className="hello">Wireframe</h2>

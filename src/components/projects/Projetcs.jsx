@@ -30,7 +30,7 @@ export default function Projects() {
     return(
    
         <div className="Projects-container" >
-            <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} />
+            <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} alt='background' />
             <Carousel id="presentation-project" className="presentation" showStatus={false} showThumbs={false} useKeyboardArrows={true} autoPlay={true} interval={10000} transitionTime={1000} infiniteLoop={true}>
             <h2 className="about-me-title">Let me show my talent with projects i had already do</h2>
                 <div className="textcontainer">
