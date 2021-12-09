@@ -1,5 +1,4 @@
 import {  useState } from 'react';
-import { DOMAIN_URL} from '../../Fetch'
 import './../contact/Contact.css'
 import 'react-confirm-alert/src/react-confirm-alert.css';
 
@@ -42,7 +41,7 @@ const Contact = () => {
 
     return (
         <div className="admin-container">
-            <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} alt="background"/>
+            <img className="background" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/gemetric2.jpg?raw=true" alt="background"/>
             <section className="form-container">
                 <section id="contact">
                     <div className="container">

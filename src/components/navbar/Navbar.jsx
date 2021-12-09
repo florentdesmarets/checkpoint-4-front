@@ -35,7 +35,7 @@ export default function Navbar() {
                 <span className={openMenu ? "cross-3" : "cross-6" }></span>
             </div>
             <div className={openMenu ? "menu-open" : "menu-close"}>
-                <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} alt='background' />
+                <img className="background" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/gemetric2.jpg?raw=true" alt='background' />
                 <div className={openMenu ? "animation-on" : "animation-off"}>
                     <Link className="links" to="/" onClick={changeOpenMenu}>  <h2 className="home">Home</h2></Link>
                     <Link className="links" to="/about-me" onClick={changeOpenMenu}>  <h2 className="about">About me</h2></Link>
