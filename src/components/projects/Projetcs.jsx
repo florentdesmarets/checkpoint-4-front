@@ -1,10 +1,10 @@
 import React from 'react';
 import './Projects.css';
-import {DOMAIN_URL} from '../../Fetch'
+// import {DOMAIN_URL} from '../../Fetch'
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import { FETCH } from './../../Fetch';
-import Footer from '../footer/Footer';
+// import Footer from '../footer/Footer';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -15,17 +15,17 @@ export default function Projects() {
       }, []);
     
 
-    const [projects, setProjects] = useState([]);
+    // const [projects, setProjects] = useState([]);
 
 
-        useEffect(() => {
-            const fetchProjects = () => {
-                axios
-                .get(`${FETCH}/projects`)
-                .then(res => setProjects(res.data))
-            }
-            fetchProjects()
-        }, [])
+    //     useEffect(() => {
+    //         const fetchProjects = () => {
+    //             axios
+    //             .get(`${FETCH}/projects`)
+    //             .then(res => setProjects(res.data))
+    //         }
+    //         fetchProjects()
+    //     }, [])
 
     return(
    
@@ -48,7 +48,7 @@ export default function Projects() {
                 </div>
                 <div id="project-container" className="skills-container">
                     <h3 className="skills-title">Projects</h3>
-                    <div className="skills-object">
+                    {/* <div className="skills-object">
                         {projects.map((projects) => (
                             <div key={projects.id} className="react-card">
                                 <a href={`${DOMAIN_URL}/upload/${projects.project_link}`}><img src={`${DOMAIN_URL}/upload/${projects.project_image}`} alt="project" className="react-img"/></a>
@@ -56,10 +56,26 @@ export default function Projects() {
                             </div>
                         ))
                         }
+                    </div> */}
+                    <div className="skills-object">
+                        
+                            <div className="react-card">
+                                <a href="http://www.cjftennis.com/" ><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/upload/logo-cjf.jpeg?raw=true" alt="cjftennis" className="react-img"/></a>
+                                <p className="react-text">CJF TENNIS</p>
+                            </div>
+                            <div className="react-card">
+                                <a href="https://comparateuragricole.com/" ><img src="https://yt3.ggpht.com/ytc/AKedOLRGMj2Uo5pxYEzyXj6m5fh_ID36Le39bEjeAcWo=s900-c-k-c0x00ffffff-no-rj" alt="comparateuragricole" className="react-img"/></a>
+                                <p className="react-text">Farmers Hackathon</p>
+                            </div>
+                            <div className="react-card">
+                                <a href="" ><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/upload/logo-msh.png?raw=true" alt="logomsh" className="react-img"/></a>
+                                <p className="react-text">My Sup'r Hero</p>
+                            </div>
+
                     </div>
                 </div>
             </Carousel>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
       
        

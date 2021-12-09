@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import {Link} from "react-router-dom";
 import {useState} from 'react';
-import { DOMAIN_URL } from '../../Fetch';
+// import { DOMAIN_URL } from '../../Fetch';
 
 
 export default function Navbar() {
@@ -42,13 +42,13 @@ export default function Navbar() {
                     <Link className="links" to="/projects" onClick={changeOpenMenu}>   <h2 className="projects">Projects</h2></Link>
                     <Link className="links" to="/contact" onClick={changeOpenMenu}>   <h2 className="contact">Contact</h2></Link>
                     <div className="social-networks-container">
-                        <a href="https://www.facebook.com/florent.desmarets" target="BLANK" rel='noreferrer' ><img src={`${DOMAIN_URL}/assets/facebook(3).png`} alt="facebook" className="social-networks"/></a>
-                        <a href="https://github.com/florentdesmarets" target="BLANK" rel='noreferrer'><img src={`${DOMAIN_URL}/assets/github.png`} alt="github" className="social-networks"/></a>
-                        <a href="https://www.instagram.com/florent_desmarets/?hl=fr" target="BLANK" rel='noreferrer'><img src={`${DOMAIN_URL}/assets/instagram(3).png`} alt="instagram" className="social-networks"/></a>
-                        <a href="https://www.linkedin.com/in/florent-desmarets-638a491b9/" target="BLANK" rel='noreferrer'><img src={`${DOMAIN_URL}/assets/linkedin.png`}  alt="linkedin" className="social-networks"/></a>
+                        <a href="https://www.facebook.com/florent.desmarets" target="BLANK" rel='noreferrer' ><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/facebook(3).png?raw=true" alt="facebook" className="social-networks"/></a>
+                        <a href="https://github.com/florentdesmarets" target="BLANK" rel='noreferrer'><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/github.png?raw=true" alt="github" className="social-networks"/></a>
+                        <a href="https://www.instagram.com/florent_desmarets/?hl=fr" target="BLANK" rel='noreferrer'><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/instagram(3).png?raw=true" alt="instagram" className="social-networks"/></a>
+                        <a href="https://www.linkedin.com/in/florent-desmarets-638a491b9/" target="BLANK" rel='noreferrer'><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/linkedin.png?raw=true"  alt="linkedin" className="social-networks"/></a>
                     </div>
                 </div>
-                <Link className="links" to="/admin" onClick={changeOpenMenu}>  <img className="admin" src={`${DOMAIN_URL}/assets/cerf.jpg`} alt='dear'/></Link> 
+                <Link className="links" to="/admin" onClick={changeOpenMenu}>  <img className="admin" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/cerf.jpg?raw=true" alt='dear'/></Link> 
             </div>
         </div>
     </div>
