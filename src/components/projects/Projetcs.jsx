@@ -1,9 +1,9 @@
 import React from 'react';
 import './Projects.css';
 // import {DOMAIN_URL} from '../../Fetch'
-import {useState, useEffect} from 'react';
-import axios from 'axios';
-import { FETCH } from './../../Fetch';
+import { useEffect} from 'react';
+// import axios from 'axios';
+// import { FETCH } from './../../Fetch';
 // import Footer from '../footer/Footer';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -44,7 +44,7 @@ export default function Projects() {
                     <p className="presentation-description">Realizing the dreams of my employees is my main mission.</p>
 
                     <p className="presentation-description">I look forward to working with you.</p>
-                    <img src={`${DOMAIN_URL}/assets/web-dev.jpg`} alt="" className="dev-picture"/>
+                    <img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/web-dev.jpg?raw=true" alt="" className="dev-picture"/>
                 </div>
                 <div id="project-container" className="skills-container">
                     <h3 className="skills-title">Projects</h3>
@@ -68,7 +68,7 @@ export default function Projects() {
                                 <p className="react-text">Farmers Hackathon</p>
                             </div>
                             <div className="react-card">
-                                <a href="" ><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/upload/logo-msh.png?raw=true" alt="logomsh" className="react-img"/></a>
+                                <a href="/" ><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/upload/logo-msh.png?raw=true" alt="logomsh" className="react-img"/></a>
                                 <p className="react-text">My Sup'r Hero</p>
                             </div>
 
