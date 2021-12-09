@@ -42,7 +42,7 @@ const Contact = () => {
 
     return (
         <div className="admin-container">
-            <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} />
+            <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} alt="background"/>
             <section className="form-container">
                 <section id="contact">
                     <div className="container">

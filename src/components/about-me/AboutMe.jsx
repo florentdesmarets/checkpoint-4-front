@@ -1,7 +1,7 @@
 import React from 'react';
 import './AboutMe.css';
 import {DOMAIN_URL} from '../../Fetch'
-import {useState, useEffect} from 'react';
+import {useEffect} from 'react';
 import Footer from '../footer/Footer';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -16,7 +16,7 @@ export default function AboutMe() {
     return(
    
         <div id="about-us-container" className="about-me-container" >
-           <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} />
+           <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} alt='background' />
             <Carousel id="presentation-section" className="presentation" showStatus={false} showThumbs={false} useKeyboardArrows={true} autoPlay={true} interval={10000} transitionTime={1000} infiniteLoop={true}>
                     <h2 id="who-i-am" className="about-me-title">Who i am ?</h2>
                     <div className="textcontainer">
@@ -36,15 +36,15 @@ export default function AboutMe() {
                     <h3 className="skills-title">My Skills</h3>
                     <div className="skills-object">
                         <div className="react-card">
-                            <a href="https://fr.reactjs.org/" target="_blank"><img src={`${DOMAIN_URL}/assets/react.png`} alt="react" className="react-img"/> </a>
+                            <a href="https://fr.reactjs.org/" target="_blank" rel='noreferrer'><img src={`${DOMAIN_URL}/assets/react.png`} alt="react" className="react-img"/> </a>
                             <p className="react-text">React</p>
                         </div>
                         <div className="react-card">
-                            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"> <img src={`${DOMAIN_URL}/assets/javascript.png`} alt="react" className="react-img"/> </a>
+                            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank" rel='noreferrer'> <img src={`${DOMAIN_URL}/assets/javascript.png`} alt="react" className="react-img"/> </a>
                             <p className="react-text">Javascript</p>
                         </div>
                         <div className="react-card">
-                            <a href="https://www.mysql.com/fr/" target="_blank"><img src={`${DOMAIN_URL}/assets/mysql.png`} alt="react" className="react-img"/></a>
+                            <a href="https://www.mysql.com/fr/" target="_blank" rel='noreferrer'><img src={`${DOMAIN_URL}/assets/mysql.png`} alt="react" className="react-img"/></a>
                             <p className="react-text">MySql</p>
                         </div>
                     </div>

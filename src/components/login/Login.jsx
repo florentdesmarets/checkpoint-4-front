@@ -39,7 +39,7 @@ const Login = () => {
 
     return (
         <div className="admin-container">
-        <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} />
+        <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} alt='background' />
             <h1 className="main-title-contact">Log In</h1>
             <section className="form-container">
                 <form onSubmit={handleSubmit} >
