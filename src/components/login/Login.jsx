@@ -1,7 +1,6 @@
 import {  useState, useContext } from 'react';
 import axios from 'axios';
 import { FETCH } from '../../Fetch';
-import { DOMAIN_URL} from '../../Fetch'
 import './../contact/Contact.css'
 import 'react-confirm-alert/src/react-confirm-alert.css';
 import userContext from './UserContext'

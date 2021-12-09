@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css';
-import {DOMAIN_URL} from '../../Fetch'
 import {Link} from "react-router-dom";
 
 
