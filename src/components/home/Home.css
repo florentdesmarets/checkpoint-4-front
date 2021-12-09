@@ -7,7 +7,6 @@ body {
     position: absolute;
     z-index: -2;
     top: -143px;
-    background: url("/src/little-pic/gemetric2.jpg") no-repeat;
 }
 
 .home-container {

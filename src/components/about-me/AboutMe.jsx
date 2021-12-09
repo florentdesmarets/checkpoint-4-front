@@ -16,7 +16,7 @@ export default function AboutMe() {
     return(
    
         <div id="about-us-container" className="about-me-container" >
-           <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} alt='background' />
+           <img className="background" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/gemetric2.jpg?raw=true"alt='background' />
             <Carousel id="presentation-section" className="presentation" showStatus={false} showThumbs={false} useKeyboardArrows={true} autoPlay={true} interval={10000} transitionTime={1000} infiniteLoop={true}>
                     <h2 id="who-i-am" className="about-me-title">Who i am ?</h2>
                     <div className="textcontainer">
