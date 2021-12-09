@@ -53,7 +53,7 @@ const CreateProject = () => {
 
     return (
         <div className="create-project-container">
-            <video className="video-about" src={`${DOMAIN_URL}/assets/video-true2.mp4`} autoPlay muted loop />
+          <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} />
             <h1 className="main-title-create-project ">Create project</h1>
             <form className="form-create-project" onSubmit={handleSubmit} >
                     <div className="label-text-container">

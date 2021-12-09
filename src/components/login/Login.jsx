@@ -11,26 +11,27 @@ import { useHistory } from 'react-router';
 const Login = () => {
 
     const {user, setUser} = useContext(userContext);
-    const history = useHistory();
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const [loginStatus, setLoginStatus] = useState('');
+    const [username, setUsername] = useState();
+    const [password, setPassword] = useState();
+    const [loginStatus, setLoginStatus] = useState();
 
     const handleSubmit = (e) => {
         axios.post(`${FETCH}/admins/login`, { username : username, password : password}) 
         .then((res) => res.data).then((data) => {
             if(data.message) {
-                setLoginStatus(data.message);
+                setLoginStatus(data.message); console.log(data.message);
             }
             else {
                 localStorage.setItem("token", data.token);
                 localStorage.setItem("user", data.user.username);
                 setLoginStatus("Welcome"+ data.user.username);
-                setUser(localStorage.getItem("user"));
+                setUser(localStorage.getItem("user")); console.log(data);
             }
         })
     }
-    
+
+    const history = useHistory();
+
     const handleHistory = () => {
         history.push('/loged')
     }

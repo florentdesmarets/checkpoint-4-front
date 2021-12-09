@@ -10,10 +10,10 @@ import Projects from './components/projects/Projetcs';
 import Admin from './components/admin/Admin';
 import Contact from './components/contact/Contact'
 import CreateProject from './components/create-project/CreateProject';
-import AdminMessage from './components/admin/AdminMessage';
 import Login from './components/login/Login';
 import UserContext from './components/login/UserContext';
 import {useState} from 'react';
+import ProtectedRoute from './components/protected-routes/ProtectedRoutes';
 
 const App = () => {
   const [user, setUser] = useState(localStorage.getItem("user"));
@@ -27,8 +27,7 @@ const App = () => {
             <Route path="/about-me" component={AboutMe} />
             <Route path="/projects" component={Projects} />
             <Route  exact path="/admin" component={Login}/>
-            <Route  exact path="/loged" component={Admin}/>
-            <Route path="/admin/message" component={AdminMessage} />
+            <ProtectedRoute  exact path="/loged" component={Admin}/>
             <Route path="/contact" component={Contact}/>
             <Route path="/new-project" component={CreateProject}/>
           </Switch>

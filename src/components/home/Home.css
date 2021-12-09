@@ -89,53 +89,17 @@ body {
 
   
 
-
-/* .jet-animation {
-    z-index: -1;
-    position: absolute;
-    font-size: 120px;
-    transition: all 0.5s ease-in-out;
-    animation-name: space;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes space {
-    0% {
-      transform: rotate(0deg);
-      transform: translate(400px, -150px);
-    }
-    50% {
-        transform: rotate(0deg);
-        transform: translate(100px, 300px);
-    }
-    100% {
-        transform: rotate(0deg);
-        transform: translate(400px, -150px);
-    }
-  } */
-
-  /* *{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-body{
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 42px;
-	background: #f7f7f7;
-} */
 .title-span{
 	margin: 0 15px;
 	line-height: .7;
 	text-shadow: 0 0 2px rgba(255, 255, 255, 0.925);
 	animation: span 3s ease-in infinite alternate;
 }
+
+.title-span-resp {
+    display: none;
+}
+
 .code{
 	display: flex;
 	justify-content: center;
@@ -225,9 +189,29 @@ body{
         top: 0;
         filter: contrast(90%);
     }
+    .avatar {
+        display: none;
+    }
+    .letter {
+        display: none;
+    }
 
+    .title-span-resp{
+        display: flex;
+        margin: 0 15px;
+        line-height: .7;
+        text-shadow: 0 0 2px rgba(255, 255, 255, 0.925);
+        animation: span 3s ease-in infinite alternate;
+    }
+
+    .text-container {
+        transform: scale(1.5);
+    }
     .hello, .my-portfolio {
         font-size: 30px;
+    }
+    .links {
+        transform: scale(0.8);
     }
 
     .home-title {
@@ -239,16 +223,34 @@ body{
 @media screen and (max-width: 500px) {
     .background{
         height: 100%;
-        width:fit-content;
+        left: auto;
+        top: auto;
+        width: auto;
     }
 
     .hello, .my-portfolio {
         font-size: 20px;
     }
 
+    .text-container {
+        transform: scale(1.5);
+    }
+
     .home-title {
         font-size: 30px;
     }
+    .title-span-resp, .title-span, .letter {
+        text-shadow: none;
+    }
     
+}
+
+@media screen and (max-width: 375px) {
+    .buttons {
+        top: 10%;
+    }
+    .text-container {
+        margin-top: 16%;
+    }
 }
   

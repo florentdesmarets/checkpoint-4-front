@@ -5,6 +5,8 @@ import {useState, useEffect} from 'react';
 import axios from 'axios';
 import { FETCH } from './../../Fetch';
 import Footer from '../footer/Footer';
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Projects() {
 
@@ -14,9 +16,7 @@ export default function Projects() {
     
 
     const [projects, setProjects] = useState([]);
-    const [downArrowColor, setDownArrowColor]=useState(true);
-    const [downArrow, setDownArrow]=useState(true);
-    const [title, setTitle]=useState(true);
+
 
         useEffect(() => {
             const fetchProjects = () => {
@@ -26,56 +26,13 @@ export default function Projects() {
             }
             fetchProjects()
         }, [])
-    
-console.log(projects)
-
-const changeTitle = () =>{
-    if(window.scrollY>= 50) {
-        setTitle(false)
-    }else{
-        setTitle(true)
-    }
-}
-window.addEventListener('scroll', changeTitle);
-
-
-const changeArrow = () =>{
-    if(window.scrollY>= 50) {
-        setDownArrow(false)
-    }else{
-        setDownArrow(true)
-    }
-}
-window.addEventListener('mousemove', changeArrow);
-window.addEventListener('scroll', changeArrow);
-
-const changeArrowColor = () =>{
-    if(window.scrollY>= 1500) {
-        setDownArrowColor(false)
-    }else if(window.scrollY<= 200) {
-        setDownArrowColor(false)
-    }else{
-        setDownArrowColor(true)
-    }
-}
-window.addEventListener('mousemove', changeArrowColor);
-window.addEventListener('scroll', changeArrowColor);
-
-
 
     return(
    
         <div className="Projects-container" >
             <img className="background" src={`${DOMAIN_URL}/assets/gemetric2.jpg`} />
-            <h2 className={title ? "about-me-title" : "title-none"}>Let me show my talent with projects i had already do</h2>
-            <a href="#presentation-project">
-                <img src={`${DOMAIN_URL}/assets/down-arrow.png`} alt="" className={downArrow ? "down-arrow" : "no-down-arrow"}/>
-            </a>
-            <a  href="#project-container">
-                <img src={`${DOMAIN_URL}/assets/down-arrow.png`} alt="" className={downArrowColor ? "down-arrow-color" : "no-down-arrow"}/>
-            </a>
-            <section id="presentation-project" className="presentation">
-                <img src={`${DOMAIN_URL}/assets/web-dev.jpg`} alt="" className="dev-picture"/>
+            <Carousel id="presentation-project" className="presentation" showStatus={false} showThumbs={false} useKeyboardArrows={true} autoPlay={true} interval={10000} transitionTime={1000} infiniteLoop={true}>
+            <h2 className="about-me-title">Let me show my talent with projects i had already do</h2>
                 <div className="textcontainer">
                     <h3 className="presentation-title">More projects, more experience, more creativity</h3>
                     <p className="presentation-description">Creating projects is essential to progress as a developer, with wild code, school I chained Hackathon and projects which gave me a good overview of the developer's work</p>
@@ -87,20 +44,21 @@ window.addEventListener('scroll', changeArrowColor);
                     <p className="presentation-description">Realizing the dreams of my employees is my main mission.</p>
 
                     <p className="presentation-description">I look forward to working with you.</p>
+                    <img src={`${DOMAIN_URL}/assets/web-dev.jpg`} alt="" className="dev-picture"/>
                 </div>
-            </section>
-            <section id="project-container" className="skills-container">
+                <div id="project-container" className="skills-container">
                     <h3 className="skills-title">Projects</h3>
                     <div className="skills-object">
                         {projects.map((projects) => (
                             <div key={projects.id} className="react-card">
-                                <img src={`${DOMAIN_URL}/upload/${projects.project_image}`} alt="project" className="react-img"/>
+                                <a href={`${DOMAIN_URL}/upload/${projects.project_link}`}><img src={`${DOMAIN_URL}/upload/${projects.project_image}`} alt="project" className="react-img"/></a>
                                 <p className="react-text">{projects.project_title}</p>
                             </div>
                         ))
                         }
                     </div>
-            </section>
+                </div>
+            </Carousel>
             <Footer/>
         </div>
       

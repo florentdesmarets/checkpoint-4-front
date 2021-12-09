@@ -3,6 +3,7 @@ import './Home.css';
 import {DOMAIN_URL} from '../../Fetch'
 import {Link} from "react-router-dom";
 
+
 export default function Home() {
     return(
    
@@ -17,6 +18,7 @@ export default function Home() {
                 <div class="code">
                     <span className="title-span">C</span>
                     <span className="letter"></span>
+                    <span className="title-span-resp">o</span>
                     <span className="title-span">d</span>
                     <span className="title-span">e</span>
                 </div>          

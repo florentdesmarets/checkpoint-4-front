@@ -6,6 +6,15 @@
     opacity: 0;
     animation: silhouette-move-in 1000ms 800ms forwards;
   }
+
+  .form-message {
+    color:white;
+    width: 100%;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    padding: 15px;
+    transition: 0.3ms ease-in-out;
+  }
   
   @keyframes silhouette-move-in {
     from {
@@ -69,7 +78,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: -100px 0 140px;
+    margin: -220px 0 140px;
     z-index: 1;
   }
   .heading {
@@ -95,8 +104,8 @@
     color: #f300b4;
   }
   
-  .heading-wrapper .heading .title {
-    font-size: 3rem;
+  .heading-wrapper .heading .contact-title {
+    font-size: 3em;
     line-height: 2.4rem;
   }
   
@@ -172,10 +181,17 @@
   }
 
 
-@media screen and (max-width: 930px) {
-    .video-about{
-        height: 100%;
-        width: auto;
-    }
-
+@media screen and (max-width: 550px) {
+  #contact {
+    padding: 5rem 0rem;
+  }
+  .heading-wrapper .heading .contact-title {
+    font-size: 2.4em;
+    line-height: 2.4rem;
+  }
+  .heading-wrapper .heading .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  
 }
