@@ -1,8 +1,8 @@
 import React from 'react';
 import './AboutMe.css';
-import {DOMAIN_URL} from '../../Fetch'
+// import {DOMAIN_URL} from '../../Fetch'
 import {useEffect} from 'react';
-import Footer from '../footer/Footer';
+// import Footer from '../footer/Footer';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -36,21 +36,21 @@ export default function AboutMe() {
                     <h3 className="skills-title">My Skills</h3>
                     <div className="skills-object">
                         <div className="react-card">
-                            <a href="https://fr.reactjs.org/" target="_blank" rel='noreferrer'><img src={`${DOMAIN_URL}/assets/react.png`} alt="react" className="react-img"/> </a>
+                            <a href="https://fr.reactjs.org/" target="_blank" rel='noreferrer'><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/react.png?raw=true" alt="react" className="react-img"/> </a>
                             <p className="react-text">React</p>
                         </div>
                         <div className="react-card">
-                            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank" rel='noreferrer'> <img src={`${DOMAIN_URL}/assets/javascript.png`} alt="react" className="react-img"/> </a>
+                            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank" rel='noreferrer'> <img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/javascript.png?raw=true" alt="react" className="react-img"/> </a>
                             <p className="react-text">Javascript</p>
                         </div>
                         <div className="react-card">
-                            <a href="https://www.mysql.com/fr/" target="_blank" rel='noreferrer'><img src={`${DOMAIN_URL}/assets/mysql.png`} alt="react" className="react-img"/></a>
+                            <a href="https://www.mysql.com/fr/" target="_blank" rel='noreferrer'><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/mysql.png?raw=true" alt="react" className="react-img"/></a>
                             <p className="react-text">MySql</p>
                         </div>
                     </div>
             </div>
             </Carousel>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
       
        
