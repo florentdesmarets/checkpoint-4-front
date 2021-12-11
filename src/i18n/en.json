@@ -1,0 +1,45 @@
+{
+    "common": {
+        "translate-button": "EN",
+        "translated-main-title1": "Wireframe",
+        "translated-main-title2": "FullStack",
+        "translated-main-title3": "Minimaslit",
+        "translated-button1": "MY PORTFOLIO",
+        "translated-button2": "GET IN TOUCH",
+
+        "translated-about-title": "Who i am ?",
+        "translated-about-second-title": "Florent Desmarets to serv you !",
+        "translated-about-line1": "I am a fullstack developer in Reactjs and nodejs, I also know how to use Mysql, Express, Javascript.",
+        "translated-about-line2": "I like to make a beautiful website with beautiful animations, graphic consistency and UX design are my strong points!",
+        "translated-about-line3": "I started web development with the wildcodeschool of Orléans where I learned everything from the work of this wonderful job.",
+        "translated-about-line4": "Realizing the dreams of my customer is my main mission.",
+        "translated-about-line5": "I look forward to working with you.",
+        "translated-about-third-title": "My Skills",
+        "translated-about-fourth-title": "My Hobbies",
+        "translated-about-line6": "I am a fan of the Gorillaz group of which I leave you a small extract",
+        "translated-about-line7": "I am a fan of Japan, i had the opportunity to go there in 2019",
+        "translated-project-title": "Let me show my talent with projects i had already do",
+        "translated-project-second-title": "More projects, more experience, more creativity",
+        "translated-project-line1": "Creating projects is essential to progress as a developer, with wild code, school I chained Hackathon and projects which gave me a good overview of the developer's work",
+        "translated-project-line2": "During an internship which followed my training at the Wild Code School in Orléans, I took the lead of a team of developers to create the website of the CJF Tennis association based in Saran.",
+        "translated-project-line3": "In the process of my training, we were divided into a team during a Hackathon in order to create an interactive map for the ComparateurAgricole.com website.",
+        "translated-project-line4": "Finally, during this same training, we did many fictives projects in order to train ourselves such as the videogame MySuperHéros.",
+        "translated-project-line5": "My main goal will be to diversify and learn more through the benefits of future projects.",
+        "translated-project-third-title": "Projects",
+
+        "translated-contact-title1": "Want to",
+        "translated-contact-title2": "contact me?",
+        "translated-contact-line1": "Please, use the form below, contact me by my social networks or send an email to",
+        "translated-contact-input1": "Name", 
+        "translated-contact-input2": "Email", 
+        "translated-contact-input3": "Message", 
+        "translated-contact-input4": "Submit",
+
+        "translated-nav-1": "Home",
+        "translated-nav-2": "About me",
+        "translated-nav-3": "Projects",
+        "translated-nav-4": "Contact"
+
+
+    }
+}

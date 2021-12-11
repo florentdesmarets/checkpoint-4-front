@@ -1,8 +1,12 @@
 import {  useState } from 'react';
 import './../contact/Contact.css'
 import 'react-confirm-alert/src/react-confirm-alert.css';
+import { useTranslation } from "react-i18next";
+
 
 const Contact = () => {
+
+const { t } = useTranslation();
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -28,7 +32,7 @@ const Contact = () => {
           setEmail("");
           setMessage("");
           document.querySelector('.form-message').innerHTML =
-          "Your email has been send.";
+          "Votre email à bien été envoyé !";
         })
         .catch(
           (err) =>
@@ -48,12 +52,12 @@ const Contact = () => {
                       <div className="heading-wrapper">
                         <div className="heading">
                           <p className="contact-title">
-                            Want to <br />
-                            contact me?
+                          {t('common.translated-contact-title1')} <br />
+                          {t('common.translated-contact-title2')}
                           </p>
                           <p className="separator" />
                           <p className="subtitle">
-                            Please, use the form below, contact me by my social networks or send an email to {''}
+                          {t('common.translated-contact-line1')} {''}
                             <span className="mail">
                               florent.
                               <i className="fas fa-at at" />
@@ -66,10 +70,10 @@ const Contact = () => {
                         </div>
                       </div>
                       <form id="contact-form" onSubmit={handleSubmit}>
-                        <input placeholder="Name *" name="name" type="text" required htmlFor="name" value={name} onChange={e => setName(e.target.value)}/>
-                        <input placeholder="Email *" name="email" type="email" required htmlFor="email" value={email} onChange={e => setEmail(e.target.value)}/>
-                        <textarea placeholder="Message *" type="text" name="message" htmlFor="message" value={message} onChange={e => setMessage(e.target.value)} />
-                        <input className="button" id="submit" value="Submit" type="submit" />
+                        <input placeholder={t('common.translated-contact-input1')}  name="name" type="text" required htmlFor="name" value={name} onChange={e => setName(e.target.value)}/>
+                        <input placeholder={t('common.translated-contact-input2')}   name="email" type="email" required htmlFor="email" value={email} onChange={e => setEmail(e.target.value)}/>
+                        <textarea placeholder={t('common.translated-contact-input3')}   type="text" name="message" htmlFor="message" value={message} onChange={e => setMessage(e.target.value)} />
+                        <input className="button" id="submit" value={t('common.translated-contact-input4')}   type="submit" />
                         <div className="form-message"></div>
                       </form>
                     </div>

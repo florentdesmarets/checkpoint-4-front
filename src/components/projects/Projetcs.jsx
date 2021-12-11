@@ -7,8 +7,13 @@ import { useEffect} from 'react';
 // import Footer from '../footer/Footer';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { useTranslation } from "react-i18next";
+
 
 export default function Projects() {
+
+
+    const { t } = useTranslation();
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -32,22 +37,22 @@ export default function Projects() {
         <div className="Projects-container" >
             <img className="background" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/gemetric2.jpg?raw=true" alt='background' />
             <Carousel id="presentation-project" className="presentation" showStatus={false} showThumbs={false} useKeyboardArrows={true} autoPlay={true} interval={10000} transitionTime={1000} infiniteLoop={true}>
-            <h2 className="about-me-title">Let me show my talent with projects i had already do</h2>
+            <h2 className="about-me-title">{t('common.translated-project-title')}</h2>
                 <div className="textcontainer">
-                    <h3 className="presentation-title">More projects, more experience, more creativity</h3>
-                    <p className="presentation-description">Creating projects is essential to progress as a developer, with wild code, school I chained Hackathon and projects which gave me a good overview of the developer's work</p>
+                    <h3 className="presentation-title">{t('common.translated-project-second-title')}</h3>
+                    <p className="presentation-description">{t('common.translated-project-line1')}</p>
 
-                    <p className="presentation-description">I like to make a beautiful website with beautiful animations, graphic consistency and UX design are my strong points!</p>
+                    <p className="presentation-description">{t('common.translated-project-line2')}</p>
 
-                    <p className="presentation-description">I started web development with the wildcodeschool of Orléans where I learned everything from the work of this wonderful job.</p>
+                    <p className="presentation-description">{t('common.translated-project-line3')}</p>
 
-                    <p className="presentation-description">Realizing the dreams of my employees is my main mission.</p>
+                    <p className="presentation-description">{t('common.translated-project-line4')}</p>
 
-                    <p className="presentation-description">I look forward to working with you.</p>
+                    <p className="presentation-description">{t('common.translated-project-line5')}</p>
                     <img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/web-dev.jpg?raw=true" alt="" className="dev-picture"/>
                 </div>
                 <div id="project-container" className="skills-container">
-                    <h3 className="skills-title">Projects</h3>
+                    <h3 className="skills-title">{t('common.translated-project-third-title')}</h3>
                     {/* <div className="skills-object">
                         {projects.map((projects) => (
                             <div key={projects.id} className="react-card">
@@ -58,20 +63,24 @@ export default function Projects() {
                         }
                     </div> */}
                     <div className="skills-object">
-                        
-                            <div className="react-card">
-                                <a href="http://www.cjftennis.com/" ><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/upload/logo-cjf.jpeg?raw=true" alt="cjftennis" className="react-img"/></a>
-                                <p className="react-text">CJF TENNIS</p>
-                            </div>
-                            <div className="react-card">
-                                <a href="https://comparateuragricole.com/" ><img src="https://yt3.ggpht.com/ytc/AKedOLRGMj2Uo5pxYEzyXj6m5fh_ID36Le39bEjeAcWo=s900-c-k-c0x00ffffff-no-rj" alt="comparateuragricole" className="react-img"/></a>
-                                <p className="react-text">Farmers Hackathon</p>
-                            </div>
-                            <div className="react-card">
-                                <a href="/" ><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/upload/logo-msh.png?raw=true" alt="logomsh" className="react-img"/></a>
-                                <p className="react-text">My Sup'r Hero</p>
-                            </div>
-
+                            <a className="link" href="http://www.cjftennis.com/" target="_blank"rel='noreferrer' >
+                                <div className="react-card">
+                                    <img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/upload/logo-cjf.jpeg?raw=true" alt="cjftennis" className="react-img"/>
+                                    <p className="react-text">CJF TENNIS</p>
+                                </div>
+                            </a>
+                            <a className="link" href="https://comparateuragricole.com/" target="_blank"rel='noreferrer'  >
+                                <div className="react-card">
+                                    <img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/comparateur.jpg?raw=true" alt="comparateuragricole" className="react-img"/>
+                                    <p className="react-text">Farmers Hackathon</p>
+                                </div>
+                            </a>    
+                            <a className="link" href="/" target="_blank" rel='noreferrer'>
+                                <div className="react-card">
+                                <img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/upload/logo-msh.png?raw=true" alt="logomsh" className="react-img"/>
+                                    <p className="react-text">My Sup'r Hero</p>
+                                </div>
+                            </a>
                     </div>
                 </div>
             </Carousel>
