@@ -3,10 +3,13 @@ import './Navbar.css';
 import {Link} from "react-router-dom";
 import {useState} from 'react';
 // import { DOMAIN_URL } from '../../Fetch';
+import { useTranslation } from "react-i18next";
 
 
 export default function Navbar() {
 
+
+    const { t } = useTranslation();
     const [openMenu, setOpenMenu]= useState(false)
     const changeOpenMenu=() =>setOpenMenu(!openMenu)
 
@@ -17,10 +20,10 @@ export default function Navbar() {
                 <Link className="links" to="/"> <h1 className="navbar-title">Florent Desmarets</h1></Link>
             </div>
             <div className="navbar-links-container">
-                <Link className="links" to="/">  <h2 className="home">Home</h2></Link>
-                <Link className="links" to="/about-me">  <h2 className="about">About me</h2></Link>
-                <Link className="links" to="/projects">  <h2 className="projects">Projects</h2></Link>
-                <Link className="links" to="/contact">  <h2 className="contact">Contact</h2></Link>
+                <Link className="links" to="/">  <h2 className="home">{t('common.translated-nav-1')}</h2></Link>
+                <Link className="links" to="/about-me">  <h2 className="about">{t('common.translated-nav-2')}</h2></Link>
+                <Link className="links" to="/projects">  <h2 className="projects">{t('common.translated-nav-3')}</h2></Link>
+                <Link className="links" to="/contact">  <h2 className="contact">{t('common.translated-nav-4')}</h2></Link>
                 <Link className="links" to="/admin">  <h2 className="admin">🚀</h2></Link>
             </div>
         </div>
@@ -37,10 +40,10 @@ export default function Navbar() {
             <div className={openMenu ? "menu-open" : "menu-close"}>
                 <img className="background" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/gemetric2.jpg?raw=true" alt='background' />
                 <div className={openMenu ? "animation-on" : "animation-off"}>
-                    <Link className="links" to="/" onClick={changeOpenMenu}>  <h2 className="home">Home</h2></Link>
-                    <Link className="links" to="/about-me" onClick={changeOpenMenu}>  <h2 className="about">About me</h2></Link>
-                    <Link className="links" to="/projects" onClick={changeOpenMenu}>   <h2 className="projects">Projects</h2></Link>
-                    <Link className="links" to="/contact" onClick={changeOpenMenu}>   <h2 className="contact">Contact</h2></Link>
+                    <Link className="links" to="/" onClick={changeOpenMenu}>  <h2 className="home">{t('common.translated-nav-1')}</h2></Link>
+                    <Link className="links" to="/about-me" onClick={changeOpenMenu}>  <h2 className="about">{t('common.translated-nav-2')}</h2></Link>
+                    <Link className="links" to="/projects" onClick={changeOpenMenu}>   <h2 className="projects">{t('common.translated-nav-3')}</h2></Link>
+                    <Link className="links" to="/contact" onClick={changeOpenMenu}>   <h2 className="contact">{t('common.translated-nav-4')}</h2></Link>
                     <div className="social-networks-container">
                         <a href="https://www.facebook.com/florent.desmarets" target="BLANK" rel='noreferrer' ><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/facebook(3).png?raw=true" alt="facebook" className="social-networks"/></a>
                         <a href="https://github.com/florentdesmarets" target="BLANK" rel='noreferrer'><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/github.png?raw=true" alt="github" className="social-networks"/></a>

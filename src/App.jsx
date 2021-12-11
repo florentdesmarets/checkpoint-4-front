@@ -12,6 +12,7 @@ import CreateProject from './components/create-project/CreateProject';
 import Login from './components/login/Login';
 import UserContext from './components/login/UserContext';
 import {useState} from 'react';
+import Lang from "./Lang"
 // import ProtectedRoute from './components/protected-routes/ProtectedRoutes';
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
     <div className="App">
       <Router>
         <Navbar/>
+        <Lang />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about-me" component={AboutMe} />
