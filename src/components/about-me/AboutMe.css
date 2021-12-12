@@ -170,7 +170,7 @@
         z-index: -2;
         left: 0;
         top: 0;
-        filter: contrast(90%);
+        
     }
 
     .presentation-description {
@@ -198,7 +198,7 @@
         align-items: center;
     }
     .skills-container {
-        top: 150%;
+        top: 10vh;
         display: flex;
         flex-direction: column;
     }
@@ -219,9 +219,13 @@
     .react-text {
         font-size: 18px;
     }
+    .react-img {
+        width: 100px;
+        height: 100px;
+    }
         
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     .background{
         height: 100%;
         width:auto;
@@ -229,6 +233,16 @@
 
     .presentation {
         top: -1vh;
+    }
+    .react-img {
+        width: 50px;
+        height: 80px;
+    }
+    .react-card {
+        padding: 15px;
+    }
+    .youtube-japan {
+        display: none;
     }
     
 }
