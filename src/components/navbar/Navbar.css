@@ -228,6 +228,10 @@
         width: 45px;
         height: auto;
     }
+    .social-networks-container {
+        padding: 0;
+        margin: 5px;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -248,7 +252,8 @@
         animation-fill-mode: backwards;
     }
     .social-networks-container {
-        width: 86%;
+        padding: 0;
+        
     }
     .social-networks {
         padding: 8px;
