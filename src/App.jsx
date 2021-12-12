@@ -13,6 +13,7 @@ import Login from './components/login/Login';
 import UserContext from './components/login/UserContext';
 import {useState} from 'react';
 import Lang from "./Lang"
+import Loader from './components/loading-page/Loader';
 // import ProtectedRoute from './components/protected-routes/ProtectedRoutes';
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
   return (
     <UserContext.Provider value ={{user, setUser}}>
     <div className="App">
+    <Loader className="loader"></Loader>
       <Router>
         <Navbar/>
         <Lang />
