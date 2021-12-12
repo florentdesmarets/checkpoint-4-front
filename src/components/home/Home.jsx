@@ -6,11 +6,13 @@ import { useTranslation } from "react-i18next";
 
 export default function Home() {
     const { t } = useTranslation();
+    
+
     return(
    
         <div className="home-container" >
             <img className="background" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/gemetric2.jpg?raw=true" alt='background'/>
-            <div className="avatar"></div>
+            {/* <div className="avatar"></div> */}
             <div className="text-container">
                 <h2 className="hello"> <p>{t('common.translated-main-title1')}</p></h2>
                 <h2 className="hello"> <p>{t('common.translated-main-title2')}</p></h2>
