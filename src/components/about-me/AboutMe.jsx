@@ -6,7 +6,7 @@ import {useEffect} from 'react';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useTranslation } from "react-i18next";
-
+import Background from '../background/Background';
 
 export default function AboutMe() {
 
@@ -19,7 +19,7 @@ export default function AboutMe() {
     return(
    
         <div id="about-us-container" className="about-me-container" >
-           <img className="background" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/gemetric2.jpg?raw=true"alt='background' />
+            <Background/>
             <Carousel id="presentation-section" className="presentation" useKeyboardArrows={true} stopOnHover={true} showStatus={false} showThumbs={false} autoPlay={true} interval={10000} transitionTime={1000} infiniteLoop={true}>
                     <h2 id="who-i-am" className="about-me-title">{t('common.translated-about-title')}</h2>
                     <div className="textcontainer">

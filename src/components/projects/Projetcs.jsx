@@ -8,7 +8,7 @@ import { useEffect} from 'react';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useTranslation } from "react-i18next";
-
+import Background from "../background/Background"
 
 export default function Projects() {
 
@@ -35,7 +35,7 @@ export default function Projects() {
     return(
    
         <div className="Projects-container" >
-            <img className="background" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/gemetric2.jpg?raw=true" alt='background' />
+            <Background/>
             <Carousel id="presentation-project" className="presentation" showStatus={false} showThumbs={false} useKeyboardArrows={true} autoPlay={true} interval={10000} transitionTime={1000} infiniteLoop={true}>
             <h2 className="about-me-title">{t('common.translated-project-title')}</h2>
                 <div className="textcontainer">

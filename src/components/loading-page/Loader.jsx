@@ -1,12 +1,13 @@
 import React from 'react';
 import "./Loader.css"
+import Background from '../background/Background';
 
 export default function Loader() {
 
   
     return (
         <div className="loader-container" >
-            <img className="background-loader" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/gemetric2.jpg?raw=true" alt="background"/>
+            <Background/>
             <h1 className='loading-title'>LOADING</h1>
             <div className='loader'>
                 <div className="ball1"></div>
