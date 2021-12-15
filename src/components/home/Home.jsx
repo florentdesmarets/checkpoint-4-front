@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import {Link} from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Background from '../background/Background';
 
 
 export default function Home() {
@@ -9,9 +10,9 @@ export default function Home() {
     
 
     return(
-   
+        
         <div className="home-container" >
-            <img className="background" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/gemetric2.jpg?raw=true" alt='background'/>
+            <Background/>
             {/* <div className="avatar"></div> */}
             <div className="text-container">
                 <h2 className="hello"> <p>{t('common.translated-main-title1')}</p></h2>

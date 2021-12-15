@@ -2,6 +2,7 @@ import {  useState } from 'react';
 import './../contact/Contact.css'
 import 'react-confirm-alert/src/react-confirm-alert.css';
 import { useTranslation } from "react-i18next";
+import Background from '../background/Background'
 
 
 const Contact = () => {
@@ -45,7 +46,7 @@ const { t } = useTranslation();
 
     return (
         <div className="admin-container">
-            <img className="background" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/gemetric2.jpg?raw=true" alt="background"/>
+          <Background/>
             <section className="form-container">
                 <section id="contact">
                     <div className="container">

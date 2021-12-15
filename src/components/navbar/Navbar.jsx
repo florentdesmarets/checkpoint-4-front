@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import {useState} from 'react';
 // import { DOMAIN_URL } from '../../Fetch';
 import { useTranslation } from "react-i18next";
+import Background from '../background/Background';
 
 
 export default function Navbar() {
@@ -17,7 +18,7 @@ export default function Navbar() {
         <div className="navbar">
         <div className="navbar-container" >
             <div className="navbar-title-container">
-                <Link className="links" to="/"> <h1 className="navbar-title">Florent Desmarets</h1></Link>
+                <Link className="links" to="/"> <img alt="logo" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/logo3.png?raw=true"/></Link>
             </div>
             <div className="navbar-links-container">
                 <Link className="links" to="/">  <h2 className="home">{t('common.translated-nav-1')}</h2></Link>
@@ -29,7 +30,7 @@ export default function Navbar() {
         </div>
         <div className="navbar-responsive">
             <div className="title-navbar-container">
-                <Link className="links" to="/"> <h1 className="navbar-title">Florent Desmarets</h1></Link>
+                <Link className="links" to="/">  <img alt="logo"  className="logo" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/logo3.png?raw=true"/></Link>
             </div>
 
             <div className="NavbarMenu-Burger" id="#Burger" onClick={changeOpenMenu} >
@@ -38,7 +39,7 @@ export default function Navbar() {
                 <span className={openMenu ? "cross-3" : "cross-6" }></span>
             </div>
             <div className={openMenu ? "menu-open" : "menu-close"}>
-                <img className="background" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/gemetric2.jpg?raw=true" alt='background' />
+                <Background/>
                 <div className={openMenu ? "animation-on" : "animation-off"}>
                     <Link className="links" to="/" onClick={changeOpenMenu}>  <h2 className="home">{t('common.translated-nav-1')}</h2></Link>
                     <Link className="links" to="/about-me" onClick={changeOpenMenu}>  <h2 className="about">{t('common.translated-nav-2')}</h2></Link>
