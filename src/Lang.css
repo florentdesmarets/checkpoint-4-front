@@ -1,6 +1,6 @@
 .lang-container {
     position: absolute;
-    top: 3.7vh;
+    top: 3.5%;
     left: 96vw;
     z-index: 11;
 }
@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 900px) {
     .lang-container {
-    top: 95vh;
+    top: 95%;
     left: 82.5vw;
     }
 }
