@@ -15,6 +15,7 @@ import {useState} from 'react';
 import Lang from "./Lang"
 import Loader from './components/loading-page/Loader';
 import Games from './components/games/Games';
+import Fourzerofour from './components/404-page/Fourzerofour';
 // import ProtectedRoute from './components/protected-routes/ProtectedRoutes';
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
             <Route  exact path="/loged" component={Admin}/>
             <Route path="/contact" component={Contact}/>
             <Route path="/new-project" component={CreateProject}/>
+            <Route component={Fourzerofour}/>
           </Switch>
       </Router>
     </div>
