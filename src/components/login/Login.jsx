@@ -5,6 +5,7 @@ import './../contact/Contact.css'
 import 'react-confirm-alert/src/react-confirm-alert.css';
 import userContext from './UserContext'
 import { useHistory } from 'react-router';
+import Background from '../background/Background'
 
 
 const Login = () => {
@@ -38,7 +39,7 @@ const Login = () => {
 
     return (
         <div className="admin-container">
-        <img className="background" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/gemetric2.jpg?raw=true"alt='background' />
+            <Background/>
             <h1 className="main-title-contact">Log In</h1>
             <section className="form-container">
                 <form onSubmit={handleSubmit} >
