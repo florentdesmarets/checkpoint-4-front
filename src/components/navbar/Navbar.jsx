@@ -30,7 +30,7 @@ export default function Navbar() {
         </div>
         <div className="navbar-responsive">
             <div className="title-navbar-container">
-                <Link className="links" to="/">  <img alt="logo"  className="logo" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/logo3.png?raw=true"/></Link>
+                <Link className="links" to="/">  <img alt="logo"  className="logo" src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/logo3.png?raw=true"/></Link>
             </div>
 
             <div className="NavbarMenu-Burger" id="#Burger" onClick={changeOpenMenu} >
@@ -46,13 +46,13 @@ export default function Navbar() {
                     <Link className="links" to="/projects" onClick={changeOpenMenu}>   <h2 className="projects">{t('common.translated-nav-3')}</h2></Link>
                     <Link className="links" to="/contact" onClick={changeOpenMenu}>   <h2 className="contact">{t('common.translated-nav-4')}</h2></Link>
                     <div className="social-networks-container">
-                        <a href="https://www.facebook.com/florent.desmarets" target="BLANK" rel='noreferrer' ><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/facebook(3).png?raw=true" alt="facebook" className="social-networks"/></a>
-                        <a href="https://github.com/florentdesmarets" target="BLANK" rel='noreferrer'><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/github.png?raw=true" alt="github" className="social-networks"/></a>
-                        <a href="https://www.instagram.com/florent_desmarets/?hl=fr" target="BLANK" rel='noreferrer'><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/instagram(3).png?raw=true" alt="instagram" className="social-networks"/></a>
-                        <a href="https://www.linkedin.com/in/florent-desmarets-638a491b9/" target="BLANK" rel='noreferrer'><img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/linkedin.png?raw=true"  alt="linkedin" className="social-networks"/></a>
+                        <a href="https://www.facebook.com/florent.desmarets" target="BLANK" rel='noreferrer' ><img src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/facebook(3).png?raw=true" alt="facebook" className="social-networks"/></a>
+                        <a href="https://github.com/florentdesmarets" target="BLANK" rel='noreferrer'><img src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/github.png?raw=true" alt="github" className="social-networks"/></a>
+                        <a href="https://www.instagram.com/florent_desmarets/?hl=fr" target="BLANK" rel='noreferrer'><img src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/instagram(3).png?raw=true" alt="instagram" className="social-networks"/></a>
+                        <a href="https://www.linkedin.com/in/florent-desmarets-638a491b9/" target="BLANK" rel='noreferrer'><img src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/linkedin.png?raw=true"  alt="linkedin" className="social-networks"/></a>
                     </div>
                 </div>
-                <Link className="links" to="/admin" onClick={changeOpenMenu}>  <img className="admin" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/cerf.jpg?raw=true" alt='dear'/></Link> 
+                <Link className="links" to="/admin" onClick={changeOpenMenu}>  <img className="admin" src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/cerf.jpg?raw=true" alt='dear'/></Link> 
             </div>
         </div>
     </div>

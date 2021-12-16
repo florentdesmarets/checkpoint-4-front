@@ -49,7 +49,7 @@ export default function Projects() {
                     <p className="presentation-description">{t('common.translated-project-line4')}</p>
 
                     <p className="presentation-description">{t('common.translated-project-line5')}</p>
-                    <img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/web-dev.jpg?raw=true" alt="" className="dev-picture"/>
+                    <img src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/web-dev.jpg?raw=true" alt="" className="dev-picture"/>
                 </div>
                 <div id="project-container" className="skills-container">
                     <h3 className="skills-title">{t('common.translated-project-third-title')}</h3>
@@ -65,19 +65,19 @@ export default function Projects() {
                     <div className="skills-object">
                             <a className="link" href="http://www.cjftennis.com/" target="_blank"rel='noreferrer' >
                                 <div className="react-card">
-                                    <img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/upload/logo-cjf.jpeg?raw=true" alt="cjftennis" className="react-img"/>
+                                    <img src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/logo-cjf.jpeg?raw=true" alt="cjftennis" className="react-img"/>
                                     <p className="react-text">CJF TENNIS</p>
                                 </div>
                             </a>
                             <a className="link" href="https://comparateuragricole.com/" target="_blank"rel='noreferrer'  >
                                 <div className="react-card">
-                                    <img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/comparateur.jpg?raw=true" alt="comparateuragricole" className="react-img"/>
+                                    <img src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/comparateur.jpg?raw=true" alt="comparateuragricole" className="react-img"/>
                                     <p className="react-text">Farmers Hackathon</p>
                                 </div>
                             </a>    
                             <a className="link" href="/" target="_blank" rel='noreferrer'>
                                 <div className="react-card">
-                                <img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/upload/logo-msh.png?raw=true" alt="logomsh" className="react-img"/>
+                                <img src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/logo-msh.png?raw=true" alt="msh" className="react-img"/>
                                     <p className="react-text">My Sup'r Hero</p>
                                 </div>
                             </a>

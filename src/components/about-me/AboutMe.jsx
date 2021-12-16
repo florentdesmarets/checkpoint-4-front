@@ -40,19 +40,19 @@ export default function AboutMe() {
                     <div className="skills-object">
                         <a className='link' href="https://fr.reactjs.org/" target="_blank" rel='noreferrer'>
                             <div className="react-card">
-                                <img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/react.png?raw=true" alt="react" className="react-img"/> 
+                                <img src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/react.png?raw=true" alt="react" className="react-img"/> 
                                 <p className="react-text">React</p>
                             </div>
                         </a>
                         <a className='link' href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank" rel='noreferrer'>
                             <div className="react-card">
-                                <img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/javascript.png?raw=true" alt="react" className="react-img"/> 
+                                <img src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/javascript.png?raw=true" alt="react" className="react-img"/> 
                                 <p className="react-text">Javascript</p>
                             </div>
                         </a>
                         <a className='link'  href="https://www.mysql.com/fr/" target="_blank" rel='noreferrer'>
                             <div className="react-card">
-                                <img src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/mysql.png?raw=true" alt="react" className="react-img"/>
+                                <img src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/mysql.png?raw=true" alt="react" className="react-img"/>
                                 <p className="react-text">MySql</p>
                             </div>
                         </a>
