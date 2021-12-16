@@ -12,7 +12,7 @@
         "translated-about-line1": "Je suis un développeur Polyvalent en Reactjs et en Nodejs, je connais aussi Mysql, ExpressJs et Javascript.",
         "translated-about-line2": "J'aime réaliser de beaux sites web avec de belles animations, la cohérence graphique et L'UX Design sont mes points forts !",
         "translated-about-line3": "J'ai commencé le développement web avec la Wild Code School d'Orléans ou j'ai tout appris de ce merveilleux travail.",
-        "translated-about-line4": "Réalisé les Rêves de mes clients est première préocupation.",
+        "translated-about-line4": "Réalisé les Rêves de mes clients est ma première préocupation.",
         "translated-about-line5": "J'ai hâte de travailler avec vous !",
         "translated-about-third-title": "Mes Compétences Principales",
         "translated-about-fourth-title": "Mes Passions",
@@ -39,7 +39,9 @@
         "translated-nav-1": "Accueil",
         "translated-nav-2": "A propos de moi",
         "translated-nav-3": "Projets",
-        "translated-nav-4": "Contactez moi"
+        "translated-nav-4": "Contactez moi",
+
+        "translated-404": "Oups ! Il semblerait que la page que vous cherchez n'existe pas, cliquez sur le logo en haut a gauche pour revenir à l'accueil !"
         
 
     }

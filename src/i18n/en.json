@@ -38,7 +38,9 @@
         "translated-nav-1": "Home",
         "translated-nav-2": "About me",
         "translated-nav-3": "Projects",
-        "translated-nav-4": "Contact"
+        "translated-nav-4": "Contact",
+
+        "translated-404": "Whoops ! It seems that the page you are looking for does not exist, click on the logo on the top corner left to return to the home page!"
 
 
     }

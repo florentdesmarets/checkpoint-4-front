@@ -1,0 +1,48 @@
+.fourzerofour-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.fourzerofour-title {
+    font-family: var(--secondary-font);
+    padding: 2rem;
+    text-align: center;
+    width: 80%;
+}
+
+.fourzerofour-first-title {
+    font-family: var(--secondary-font);
+    font-size: 4rem;
+    padding: 2rem;
+    text-align: center;
+    width: 80%;
+}
+
+.fourzerofourcat {
+    width: 20rem;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .fourzerofour-first-title {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+    .fourzerofourcat {
+        width: 20rem;
+    }
+   .fourzerofour-title {
+       font-size: 1.2rem;
+   }
+   .fourzerofourpic {
+       width: 300px;
+    
+   }
+    
+}
