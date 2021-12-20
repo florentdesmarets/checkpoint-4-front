@@ -192,6 +192,11 @@
   .heading-wrapper .heading .subtitle {
     font-size: 1.2rem;
   }
-  
+  .form-container {
+    padding: 0;
+  }
+  #contact .container{
+    width:90vw;
+  }
   
 }
