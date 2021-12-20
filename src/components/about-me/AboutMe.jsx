@@ -12,17 +12,22 @@ export default function AboutMe() {
 
     const { t } = useTranslation();
 
+
     useEffect(() => {
         window.scrollTo(0, 0)
       }, []);
-    
+
+
     return(
    
         <div id="about-us-container" className="about-me-container" >
             <Background/>
-            <Carousel id="presentation-section" className="presentation" useKeyboardArrows={true} stopOnHover={true} showStatus={false} showThumbs={false} autoPlay={true} interval={10000} transitionTime={1000} infiniteLoop={true}>
-                    <h2 id="who-i-am" className="about-me-title">{t('common.translated-about-title')}</h2>
-                    <div className="textcontainer">
+            <Carousel id="presentation-section"  className="presentation"  nextArrowTemplates={true} useKeyboardArrows={true} stopOnHover={true} showStatus={false} showThumbs={false} autoPlay={true} interval={10000} transitionTime={1000} infiniteLoop={true}>
+                   <div>
+                        <h2 id="who-i-am" className="about-me-title">{t('common.translated-about-title')}</h2>
+                        <a className="button-discover" href="#text">{t('common.translated-button-show1')}</a>
+                    </div>
+                    <div className="textcontainer" id="text">
                         <h3 className="presentation-title">{t('common.translated-about-second-title')}</h3>
                         <p className="presentation-description">{t('common.translated-about-line1')}</p>
 

@@ -22,6 +22,33 @@
     animation: silhouette-move-in 1000ms 800ms forwards;
 }
 
+.button-discover {
+    position: absolute;
+    top: 70vh;
+    left: 45vw;
+    width: 150px;
+    padding: 5px;
+    transform:scale(1.6);
+    text-align: center;
+    color: black;
+    background-color: white;
+    font-family: var(--title-font);
+    text-decoration: none;
+    opacity: 0;
+    animation: silhouette-move-in 1000ms 800ms forwards;
+}
+.button-discover:focus,
+.button-discover:hover {
+    cursor: pointer;
+    color: white;
+    background:none;
+    border: 2px solid white;
+
+}
+
+.carousel.carousel-slider .control-arrow {
+    padding:50px;
+}
   
 @keyframes silhouette-move-in {
     from {
@@ -173,6 +200,19 @@
         
     }
 
+    .button-discover {
+        position: absolute;
+        top: 60vh;
+        left: 30vw;
+        width: 150px;
+        padding: 5px;
+        transform:scale(1.4);
+        text-align: center;
+        color: black;
+        background-color: white;
+     
+    }
+
     .presentation-description {
         font-size: 16px;
     }
@@ -182,12 +222,6 @@
     .about-me-title {
         font-size: 56px;
         top: 20%;
-    }
-    .dev-working {
-        width: 300px;
-        height: 300px;
-        padding: 100px;
-        border-radius: 150px;
     }
     .presentation {
         width: 100%;
@@ -223,6 +257,9 @@
         width: 100px;
         height: 100px;
     }
+    .dev-working {
+        opacity: 0;
+    }
         
 }
 @media screen and (max-width: 700px) {
@@ -242,7 +279,11 @@
         padding: 15px;
     }
     .youtube-japan {
-        display: none;
+        opacity: 0;
+    }
+    .skills-title {
+        margin-bottom: 0;
+        font-size: 34px;
     }
     
 }

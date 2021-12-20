@@ -37,8 +37,11 @@ export default function Projects() {
         <div className="Projects-container" >
             <Background/>
             <Carousel id="presentation-project" className="presentation" showStatus={false} showThumbs={false} useKeyboardArrows={true} autoPlay={true} interval={10000} transitionTime={1000} infiniteLoop={true}>
-            <h2 className="about-me-title">{t('common.translated-project-title')}</h2>
-                <div className="textcontainer">
+                <div>
+                    <h2  className="about-me-title">{t('common.translated-project-title')}</h2>
+                    <a className="button-discover" href="#project-text">{t('common.translated-button-show2')}</a>
+                </div>
+                <div className="textcontainer" id="project-text">
                     <h3 className="presentation-title">{t('common.translated-project-second-title')}</h3>
                     <p className="presentation-description">{t('common.translated-project-line1')}</p>
 

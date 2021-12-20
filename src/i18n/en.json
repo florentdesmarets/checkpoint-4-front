@@ -1,9 +1,9 @@
 {
     "common": {
         "translate-button": "EN",
-        "translated-main-title1": "Wireframe",
+        "translated-main-title1": "Developer",
         "translated-main-title2": "FullStack",
-        "translated-main-title3": "Minimaslit",
+        "translated-main-title3": "Creative",
         "translated-button1": "MY PORTFOLIO",
         "translated-button2": "GET IN TOUCH",
 
@@ -18,7 +18,7 @@
         "translated-about-fourth-title": "My Hobbies",
         "translated-about-line6": "I am a fan of the Gorillaz group of which I leave you a small extract",
         "translated-about-line7": "I am a fan of Japan, i had the opportunity to go there in 2019",
-        "translated-project-title": "Let me show my talent with projects i had already do",
+        "translated-project-title": "My Projects",
         "translated-project-second-title": "More projects, more experience, more creativity",
         "translated-project-line1": "Creating projects is essential to progress as a developer, with wild code, school I chained Hackathon and projects which gave me a good overview of the developer's work",
         "translated-project-line2": "During an internship which followed my training at the Wild Code School in Orléans, I took the lead of a team of developers to create the website of the CJF Tennis association based in Saran.",
@@ -40,8 +40,9 @@
         "translated-nav-3": "Projects",
         "translated-nav-4": "Contact",
 
-        "translated-404": "Whoops ! It seems that the page you are looking for does not exist, click on the logo on the top corner left to return to the home page!"
-
+        "translated-404": "Whoops ! It seems that the page you are looking for does not exist, click on the logo on the top corner left to return to the home page!",
+        "translated-button-show1": "Discover →", 
+        "translated-button-show2": "Discover → "
 
     }
 }

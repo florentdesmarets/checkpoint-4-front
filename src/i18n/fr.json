@@ -1,9 +1,9 @@
 {
     "common": {
         "translate-button": "FR",
-        "translated-main-title1": "Maquette",
+        "translated-main-title1": "Développeur",
         "translated-main-title2": "Polyvalent",
-        "translated-main-title3": "Minimaliste",
+        "translated-main-title3": "Créatif",
         "translated-button1": "MON PORTFOLIO",
         "translated-button2": "CONTACTEZ MOI",
 
@@ -12,20 +12,20 @@
         "translated-about-line1": "Je suis un développeur Polyvalent en Reactjs et en Nodejs, je connais aussi Mysql, ExpressJs et Javascript.",
         "translated-about-line2": "J'aime réaliser de beaux sites web avec de belles animations, la cohérence graphique et L'UX Design sont mes points forts !",
         "translated-about-line3": "J'ai commencé le développement web avec la Wild Code School d'Orléans ou j'ai tout appris de ce merveilleux travail.",
-        "translated-about-line4": "Réalisé les Rêves de mes clients est ma première préocupation.",
+        "translated-about-line4": "Réaliser les Rêves de mes clients est ma première préocupation.",
         "translated-about-line5": "J'ai hâte de travailler avec vous !",
         "translated-about-third-title": "Mes Compétences Principales",
         "translated-about-fourth-title": "Mes Passions",
         "translated-about-line6": "Je suis fan du groupe Gorillaz dont je vous laisse un petit extrait !",
         "translated-about-line7": "Je suis aussi fan du Japon que j'ai eu la chance de visité en 2019 !",
 
-        "translated-project-title": "Laissez moi vous montrer mes capacités avec les projets que j'ai réalisés",
+        "translated-project-title": "Mes Projets",
         "translated-project-second-title": "Plus de projets, plus d'expérience, plus de créativité !",
         "translated-project-line1": "Créer des projets est essentiel pour progresser en tant que développeur, avec la Wild Code School j'ai enchaîné le Hackathon et les projets, ce qui m'a donné un bon aperçu du travail du développeur",
         "translated-project-line2": "Lors d'un stage qui a suivi ma formation à la Wild Code School d'Orléans, j'ai pris la tête d'une équipe de développeur pour réaliser le site internet de l'association CJF Tennis située à Saran. ",
         "translated-project-line3": "Pendant ma formation, nous avons été répartis en équipe lors d'un Hackathon afin de créer une carte interactive pour le site ComparateurAgricole.com",
         "translated-project-line4": "Enfin, durant cette même formation, nous avons fais de nombreux projets fictifs afin de nous entrainer tel que le jeu MySuperHéros.",
-        "translated-project-line5": "Mon principal objectif va être de me diversifier et d'en apprendre davantage par les bienfais de futurs projets.",
+        "translated-project-line5": "Mon principal objectif va être de me diversifier et d'en apprendre davantage grâce à de futurs projets.",
         "translated-project-third-title": "Projets",
 
         "translated-contact-title1": "Vous voulez",
@@ -41,7 +41,9 @@
         "translated-nav-3": "Projets",
         "translated-nav-4": "Contactez moi",
 
-        "translated-404": "Oups ! Il semblerait que la page que vous cherchez n'existe pas, cliquez sur le logo en haut a gauche pour revenir à l'accueil !"
+        "translated-404": "Oups ! Il semblerait que la page que vous cherchez n'existe pas, cliquez sur le logo en haut a gauche pour revenir à l'accueil !",
+        "translated-button-show1": "Le Découvrir →", 
+        "translated-button-show2": "Les Découvrir → "
         
 
     }
