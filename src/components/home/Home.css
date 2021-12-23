@@ -25,6 +25,10 @@ body {
     font-size: 56px;
 }
 
+.seo-title {
+    opacity: 0;
+}
+
 .hello, .my-portfolio {
     color: var(--light-color);
     font-size: 50px;

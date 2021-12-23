@@ -13,7 +13,7 @@ export default function Home() {
         
         <div className="home-container" >
             <Background/>
-            {/* <div className="avatar"></div> */}
+            <h1 className="seo-title">florent desmarets</h1>
             <div className="text-container">
                 <h2 className="hello"> <p>{t('common.translated-main-title1')}</p></h2>
                 <h2 className="hello"> <p>{t('common.translated-main-title2')}</p></h2>
