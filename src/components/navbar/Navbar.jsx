@@ -16,7 +16,7 @@ export default function Navbar() {
 
     return(
         <div className="navbar">
-        <div className="navbar-container" >
+        {/* <div className="navbar-container" >
             <div className="navbar-title-container">
                 <Link className="links" to="/"> <img alt="logo" src="https://github.com/florentdesmarets/checkpoint-4-front/blob/main/public/assets/logo3.png?raw=true"/></Link>
             </div>
@@ -27,7 +27,7 @@ export default function Navbar() {
                 <Link className="links" to="/contact">  <h2 className="contact">{t('common.translated-nav-4')}</h2></Link>
                 <Link className="links" to="/admin">  <h2 className="admin">🚀</h2></Link>
             </div>
-        </div>
+        </div> */}
         <div className="navbar-responsive">
             <div className="title-navbar-container">
                 <Link className="links" to="/">  <img alt="logo"  className="logo" src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/logo3.png?raw=true"/></Link>
