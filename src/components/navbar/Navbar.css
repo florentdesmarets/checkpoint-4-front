@@ -186,6 +186,16 @@
         }
     }
 
+
+    @keyframes transitionResp {
+        0% {
+            opacity: 0;;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
     .cross-2 {
         transform: rotate(315deg) translate(-8px, -8px);
         transition: all 0.5s ease-in-out;
@@ -224,9 +234,9 @@
         height: 100vh;
         background-color: white;
         flex-direction: column;
-        transition: all 0.5s ease-in-out;
-        animation-name: transitionOpen;
-        animation-duration: 1s;
+        transition: all 0.3s ease-in-out;
+        animation-name: transitionResp;
+        animation-duration: 0.5s;
         animation-iteration-count: inherit;
         animation-fill-mode: backwards;
     }
@@ -252,9 +262,9 @@
         height: 100vh;
         background-color: white;
         flex-direction: column;
-        transition: all 0.5s ease-in-out;
-        animation-name: transitionOpen;
-        animation-duration: 1s;
+        transition: all 0.3s ease-in-out;
+        animation-name: transitionResp;
+        animation-duration: 0.5s;
         animation-iteration-count: inherit;
         animation-fill-mode: backwards;
     }
