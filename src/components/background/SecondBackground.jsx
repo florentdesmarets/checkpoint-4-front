@@ -2,7 +2,7 @@ import "./Background.css"
 
 
 
-export default function Background() {
+export default function SecondBackground() {
 
     return (
         <div className="background-container">

@@ -1,14 +1,26 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+ font-family: "Montserrat";
+ src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+}
+
+
 .fourzerofour-container {
+    margin: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: url("https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/starsky.jpeg?raw=true");
 }
 
 .fourzerofour-title {
-    font-family: var(--secondary-font);
+    font-family: "Montserrat";
     padding: 2rem;
     text-align: center;
     width: 80%;
@@ -16,7 +28,7 @@
 }
 
 .fourzerofour-first-title {
-    font-family: var(--secondary-font);
+    font-family: "Montserrat";
     font-size: 4rem;
     padding: 2rem;
     text-align: center;

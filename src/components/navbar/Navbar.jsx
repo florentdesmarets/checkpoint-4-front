@@ -30,7 +30,7 @@ export default function Navbar() {
         </div> */}
         <div className="navbar-responsive">
             <div className="title-navbar-container">
-                <Link className="links" to="/">  <img alt="logo"  className="logo" src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/logo3.png?raw=true"/></Link>
+                <Link className="links" to="/">  <img alt="logo"  className="logo" src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/logofdwhite.png?raw=true"/></Link>
             </div>
 
             <div className="NavbarMenu-Burger" id="#Burger" onClick={changeOpenMenu} >
