@@ -2,7 +2,7 @@ import {  useState } from 'react';
 import './../contact/Contact.css'
 import 'react-confirm-alert/src/react-confirm-alert.css';
 import { useTranslation } from "react-i18next";
-import Background from '../background/Background'
+import Background from '../background/SecondBackground'
 
 
 const Contact = () => {
