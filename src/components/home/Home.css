@@ -29,6 +29,10 @@ body {
     opacity: 0;
 }
 
+.links:active {
+    transform: scale(0.85);
+    transition: 0.3s ease-in-out ;
+}
 
 
 /* fallling stars */
@@ -293,7 +297,8 @@ star:nth-child(5)::before, star:nth-child(5)::after {
 }
 .button1:hover {
     transform: translateY(-2px);
-    border: 2px solid rgba(37, 35, 35, 0.808);
+    background-color: white;
+    color: black;
     
 }
 .button2 {
@@ -311,7 +316,7 @@ star:nth-child(5)::before, star:nth-child(5)::after {
 .button2:hover {
     transform: translateY(-2px);
     background-color:transparent;
-    border: 2.2px solid black;
+    border: 2.2px solid white;
 }
   @media screen and (max-width: 930px) {
     .background{
@@ -385,6 +390,7 @@ star:nth-child(5)::before, star:nth-child(5)::after {
     }
     .text-container {
         margin-top: 16%;
+        border-radius:30px;
     }
 }
   
