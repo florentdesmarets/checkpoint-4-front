@@ -8,6 +8,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useTranslation } from "react-i18next";
 import Background from '../background/Background';
 
+
 export default function AboutMe() {
 
     const { t } = useTranslation();
@@ -67,8 +68,8 @@ export default function AboutMe() {
                     <h3 className="passion-title">{t('common.translated-about-fourth-title')}</h3> 
                     <p className='presentation-description'>{t('common.translated-about-line6')}</p>  
                       <div className='spotify-container'> <iframe title="spotify-player" src="https://open.spotify.com/embed/track/1RKUoGiLEbcXN4GY4spQDx?utm_source=generator&theme=0" width="10%" height="100" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>   
-                      <p className='presentation-description'>{t('common.translated-about-line7')} </p>      
-                      <a href='/'><iframe className='youtube-japan' width="50" height="315" src="https://www.youtube.com/embed/G5RpJwCJDqc?autoplay=1&controls=0&showinfo=0&loop=1&mute=1" title="YouTube video player"  frameborder="0" allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></a>                    
+                      <p className='presentation-description'>{t('common.translated-about-line7')} </p>  
+                      <img className="japan-pic" src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/jap.jpg?raw=true" alt="japic" />  
                 </div>
             </Carousel>
             {/* <Footer/> */}

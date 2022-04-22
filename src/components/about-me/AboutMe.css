@@ -24,6 +24,7 @@
 
 .button-discover {
     position: absolute;
+    border-radius: 15px;
     top: 70vh;
     left: 45vw;
     width: 150px;
@@ -43,7 +44,21 @@
     color: white;
     background:none;
     border: 2px solid white;
+}
 
+.control-arrow {
+    transform: scale(2);
+    box-shadow: 0 0 0 0 #fff;
+    animation: mini  1.5s  inherit;
+}
+
+.japan-pic {
+    transform: scale(0.5)
+}
+
+.button-discover:active {
+    transform: scale(1.4);
+    transition: 0.3s ease-in-out;
 }
 
 .carousel.carousel-slider .control-arrow {
@@ -63,7 +78,7 @@
     }
   }
 
-  .youtube-japan {
+  .japan-pic {
       padding-left: 20vw;
       padding-right: 20vw;
   }
@@ -281,8 +296,9 @@
     .react-card {
         padding: 15px;
     }
-    .youtube-japan {
-        opacity: 0;
+    .japan-pic {
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
     .skills-title {
         margin-bottom: 0;
