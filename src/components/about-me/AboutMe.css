@@ -24,6 +24,7 @@
 
 .button-discover {
     position: absolute;
+    border-radius: 15px;
     top: 70vh;
     left: 45vw;
     width: 150px;
@@ -43,7 +44,11 @@
     color: white;
     background:none;
     border: 2px solid white;
+}
 
+.button-discover:active {
+    transform: scale(1.4);
+    transition: 0.3s ease-in-out;
 }
 
 .carousel.carousel-slider .control-arrow {

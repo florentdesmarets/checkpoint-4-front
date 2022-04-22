@@ -29,9 +29,9 @@ export default function Navbar() {
             </div>
         </div> */}
         <div className="navbar-responsive">
-            <div className="title-navbar-container">
+            
                 <Link className="links" to="/">  <img alt="logo"  className="logo" src="https://github.com/florentdesmarets/Image-storage/blob/main/Portfolio%20Website/logofdwhite.png?raw=true"/></Link>
-            </div>
+         
 
             <div className="NavbarMenu-Burger" id="#Burger" onClick={changeOpenMenu} >
                 <span className={openMenu ? "cross-1" : "cross-4" }></span>
